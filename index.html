@@ -3,74 +3,70 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SR-2555 Trainer</title>
+<title>SR‑2555 Trainer</title>
 
 <style>
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     background: #f4f6f8;
     margin: 0;
     padding: 20px;
 }
 
 .container {
-    max-width: 800px;
+    max-width: 900px;
     margin: auto;
-}
-
-.header {
     background: white;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
 }
 
-.section {
-    margin-top: 25px;
+h1 {
+    margin-top: 0;
 }
 
-.section-title {
-    font-weight: bold;
-    margin-bottom: 8px;
+.controls {
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: #f0f0f0;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e0e0e0;
 }
 
 .phrase {
-    background: white;
-    padding: 6px 10px;
-    border-radius: 6px;
-    margin-bottom: 6px;
+    padding: 6px 0;
 }
 
-.phrase-row {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.phrase-number {
+.id {
+    display: inline-block;
+    width: 40px;
     color: #888;
-    min-width: 30px;
 }
 
 .translation {
+    color: #0066cc;
+    margin-left: 40px;
     display: none;
-    margin-top: 5px;
-    padding-left: 40px;
-    font-size: 14px;
-    color: #1a73e8;
 }
 
 .examples {
+    color: #7a3db8;
+    margin-left: 40px;
     display: none;
-    margin-top: 5px;
-    padding-left: 40px;
-    font-size: 14px;
-    color: #7b1fa2;
 }
 
-.status {
+.progress {
     margin-top: 10px;
-    color: #666;
+    color: #555;
 }
 </style>
 
@@ -79,151 +75,175 @@ body {
 
 <div class="container">
 
-<div class="header">
-<h1>SR-2555 Trainer</h1>
+<h1>SR‑2555 Trainer</h1>
 
-Day:
-<input type="number" id="dayInput" value="1" min="1">
-<button onclick="loadDay()">Load</button>
-
-<div class="status" id="status">Loading database...</div>
-
+<div class="controls">
+<input type="file" id="csvFile">
+<button onclick="loadCSV()">Load CSV</button>
 </div>
 
-<div id="content"></div>
+<div class="controls">
+Day:
+<input type="number" id="dayInput" value="1" min="1">
+<button onclick="loadDay()">Load Day</button>
+<button onclick="nextDay()">Next Day</button>
+</div>
+
+<div class="progress" id="progress"></div>
+
+<div id="phrases"></div>
 
 </div>
 
 <script>
 
-const NEW_PER_DAY = 7;
-const INTERVALS = [180,90,30,14,7,3,1];
-
 let phrases = [];
+let intervals = [1,3,7,14,30,90,180];
+let newPerDay = 7;
 
-async function loadCSV() {
+function loadCSV() {
 
-    try {
+    const file = document.getElementById('csvFile').files[0];
+    if (!file) return;
 
-        const response = await fetch("database_Phrases.csv");
-        const text = await response.text();
+    const reader = new FileReader();
 
-        parseCSV(text);
+    reader.onload = function(e) {
 
-        document.getElementById("status").innerText =
-            "Loaded: " + phrases.length + " phrases";
+        const text = e.target.result;
+        const rows = text.split('\n').slice(1);
 
-        loadDay();
+        phrases = rows.map(row => {
 
-    } catch(e) {
+            const cols = row.split(',');
 
-        document.getElementById("status").innerText =
-            "Error loading database_Phrases.csv";
+            return {
+                id: Number(cols[0]),
+                en: cols[1],
+                sk: cols[2] || "",
+                ex1: cols[3] || "",
+                ex2: cols[4] || "",
+                ex3: cols[5] || ""
+            };
 
-    }
-
-}
-
-function parseCSV(text) {
-
-    phrases = [];
-
-    const lines = text.split(/\r?\n/);
-
-    for (let i = 1; i < lines.length; i++) {
-
-        if (!lines[i].trim()) continue;
-
-        const parts = lines[i].split(";");
-
-        phrases.push({
-            id: parseInt(parts[0]),
-            en: parts[1] || "",
-            sk: parts[2] || "",
-            ex1: parts[3] || "",
-            ex2: parts[4] || "",
-            ex3: parts[5] || ""
         });
+
+        restoreLastDay();
+
+    };
+
+    reader.readAsText(file);
+}
+
+function restoreLastDay() {
+
+    const lastDay = localStorage.getItem("sr_last_day");
+
+    if (lastDay) {
+        document.getElementById("dayInput").value = lastDay;
+        loadDay();
     }
-}
-
-function getBlock(day) {
-
-    const start = (day - 1) * NEW_PER_DAY + 1;
-    const end = day * NEW_PER_DAY;
-
-    return phrases.filter(p => p.id >= start && p.id <= end);
-}
-
-function toggle(button, cls) {
-
-    const el = button.closest(".phrase").querySelector("." + cls);
-
-    el.style.display =
-        el.style.display === "block" ? "none" : "block";
 
 }
 
-function createPhraseElement(p) {
-
-    const div = document.createElement("div");
-
-    div.className = "phrase";
-
-    div.innerHTML = `
-        <div class="phrase-row">
-            <div class="phrase-number">${p.id}</div>
-            <div>${p.en}</div>
-            <button onclick="toggle(this,'translation')">SK</button>
-            <button onclick="toggle(this,'examples')">Examples</button>
-        </div>
-        <div class="translation">${p.sk}</div>
-        <div class="examples">
-            ${p.ex1 ? "<div>"+p.ex1+"</div>" : ""}
-            ${p.ex2 ? "<div>"+p.ex2+"</div>" : ""}
-            ${p.ex3 ? "<div>"+p.ex3+"</div>" : ""}
-        </div>
-    `;
-
-    return div;
+function saveLastDay(day) {
+    localStorage.setItem("sr_last_day", day);
 }
 
 function loadDay() {
 
-    if (!phrases.length) return;
+    const day = Number(document.getElementById("dayInput").value);
+    saveLastDay(day);
 
-    const day = parseInt(dayInput.value);
+    const review = [];
+    const startNew = (day - 1) * newPerDay;
+    const newOnes = phrases.slice(startNew, startNew + newPerDay);
 
-    content.innerHTML = "";
+    for (let i = 0; i < phrases.length; i++) {
 
-    INTERVALS.forEach(interval => {
+        for (let int of intervals) {
 
-        const review = getBlock(day - interval);
+            if (day - int > 0) {
 
-        if (!review.length) return;
+                const learnedDay = Math.ceil((i+1)/newPerDay);
 
-        const sec = document.createElement("div");
-        sec.className = "section";
-        sec.innerHTML = "<div class='section-title'>REVIEW ("+interval+")</div>";
+                if (learnedDay === day - int) {
+                    review.push(phrases[i]);
+                }
 
-        review.forEach(p => sec.appendChild(createPhraseElement(p)));
+            }
 
-        content.appendChild(sec);
+        }
 
-    });
+    }
 
-    const newBlock = getBlock(day);
+    render(review, newOnes);
 
-    const sec = document.createElement("div");
-    sec.className = "section";
-    sec.innerHTML = "<div class='section-title'>NEW</div>";
+    document.getElementById("progress").innerText =
+        "Day " + day +
+        " • Review: " + review.length +
+        " • New: " + newOnes.length +
+        " • Total phrases: " + phrases.length;
 
-    newBlock.forEach(p => sec.appendChild(createPhraseElement(p)));
-
-    content.appendChild(sec);
 }
 
-loadCSV();
+function nextDay() {
+
+    const input = document.getElementById("dayInput");
+    input.value = Number(input.value) + 1;
+    loadDay();
+
+}
+
+function render(review, newOnes) {
+
+    const container = document.getElementById("phrases");
+    container.innerHTML = "";
+
+    review.forEach(p => container.appendChild(createPhrase(p)));
+
+    container.appendChild(document.createElement("br"));
+
+    newOnes.forEach(p => container.appendChild(createPhrase(p)));
+
+}
+
+function createPhrase(p) {
+
+    const div = document.createElement("div");
+    div.className = "phrase";
+
+    const id = document.createElement("span");
+    id.className = "id";
+    id.innerText = p.id;
+
+    const text = document.createElement("span");
+    text.innerText = p.en;
+
+    const btnSK = document.createElement("button");
+    btnSK.innerText = "SK";
+    btnSK.onclick = () => toggle(sk);
+
+    const btnEX = document.createElement("button");
+    btnEX.innerText = "Examples";
+    btnEX.onclick = () => toggle(ex);
+
+    const sk = document.createElement("div");
+    sk.className = "translation";
+    sk.innerText = p.sk;
+
+    const ex = document.createElement("div");
+    ex.className = "examples";
+    ex.innerText = [p.ex1,p.ex2,p.ex3].filter(Boolean).join("\n");
+
+    div.append(id, text, btnSK, btnEX, sk, ex);
+
+    return div;
+}
+
+function toggle(el) {
+    el.style.display = el.style.display === "block" ? "none" : "block";
+}
 
 </script>
 
