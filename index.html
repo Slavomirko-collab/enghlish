@@ -1,450 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SR-2555 Trainer</title>
 <style>
-  :root{
-    --bg:#f4f6f8;
-    --card:#ffffff;
-    --text:#111;
-    --muted:#6b7280;
-    --line:#e5e7eb;
-    --btn:#f3f4f6;
-    --btn-h:#e5e7eb;
-    --sk:#0066cc;
-    --ex:#7a3db8;
-  }
-  body{
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    background:var(--bg);
-    margin:0;
-    padding:18px;
-    color:var(--text);
-  }
-  .container{
-    max-width:980px;
-    margin:0 auto;
-    background:var(--card);
-    padding:22px 22px 18px;
-    border-radius:14px;
-    box-shadow:0 6px 24px rgba(0,0,0,.08);
-  }
-  h1{ margin:0 0 14px; font-size:44px; letter-spacing:-.5px; }
-  .row{
-    display:flex;
-    gap:10px;
-    flex-wrap:wrap;
-    align-items:center;
-    margin:10px 0;
-  }
-  .row label{
-    font-size:18px;
-    font-weight:600;
-  }
-  input[type="number"]{
-    width:110px;
-    padding:10px 12px;
-    border:1px solid var(--line);
-    border-radius:10px;
-    font-size:18px;
-    outline:none;
-  }
-  button{
-    padding:10px 14px;
-    border-radius:10px;
-    border:1px solid var(--line);
-    background:var(--btn);
-    cursor:pointer;
-    font-size:16px;
-    font-weight:600;
-  }
-  button:hover{ background:var(--btn-h); }
-  button:disabled{
-    opacity:.55;
-    cursor:not-allowed;
-  }
-  .status{
-    margin-top:6px;
-    color:var(--muted);
-    font-size:14px;
-    line-height:1.4;
-  }
-  .section-title{
-    margin:22px 0 10px;
-    font-size:26px;
-    letter-spacing:.2px;
-  }
-  #phrases{ margin-top:6px; }
-  .phrase{
-    padding:10px 0;
-    border-bottom:1px solid var(--line);
-  }
-  .phrase:last-child{ border-bottom:none; }
-  .line{
-    display:flex;
-    gap:10px;
-    align-items:flex-start;
-    flex-wrap:wrap;
-  }
-  .id{
-    width:44px;
-    color:#9ca3af;
-    font-weight:700;
-    flex:0 0 auto;
-  }
-  .en{
-    flex:1 1 420px;
-    font-size:18px;
-    line-height:1.35;
-  }
-  .btns{
-    display:flex;
-    gap:8px;
-    flex:0 0 auto;
-  }
-  .btn-mini{
-    padding:6px 10px;
-    border-radius:9px;
-    font-size:14px;
-    font-weight:700;
-  }
-  .translation{
-    margin-left:44px;
-    margin-top:8px;
-    color:var(--sk);
-    display:none;
-    white-space:pre-wrap;
-  }
-  .examples{
-    margin-left:44px;
-    margin-top:8px;
-    color:var(--ex);
-    display:none;
-    white-space:pre-wrap;
-  }
-  .spacer{
-    height:14px;
-    border-bottom:2px dashed var(--line);
-    margin:18px 0 4px;
-  }
-  .pill{
-    display:inline-block;
-    padding:6px 10px;
-    border:1px solid var(--line);
-    border-radius:999px;
-    font-size:13px;
-    color:var(--muted);
-    background:#fafafa;
-  }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial;
+  background: #f4f6f8;
+  margin: 0;
+  padding: 20px;
+}
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0,0,0,.08);
+}
+h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  background: #e5e7eb;
+  cursor: pointer;
+}
+button:hover {
+  background: #d1d5db;
+}
+.error {
+  color: #b91c1c;
+  margin: 10px 0;
+}
+.phrase {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
 </style>
 </head>
 <body>
-  <div class="container">
-    <h1>SR-2555 Trainer</h1>
 
-    <div class="row">
-      <span class="pill" id="csvState">CSV: loading…</span>
-      <button id="reloadBtn" onclick="reloadCSV()">Reload CSV</button>
-    </div>
+<div class="container">
+<h1>SR-2555 Trainer</h1>
 
-    <div class="row">
-      <label for="dayInput">Day:</label>
-      <input type="number" id="dayInput" min="1" value="1" />
-      <button id="loadDayBtn" onclick="loadDay()">Load Day</button>
-      <button id="nextDayBtn" onclick="nextDay()">Next Day</button>
-    </div>
+<div id="status">Loading CSV automatically...</div>
 
-    <div class="status" id="progress"></div>
+<div>
+Day:
+<input type="number" id="dayInput" value="1" min="1">
+<button onclick="loadDay()">Load Day</button>
+<button onclick="nextDay()">Next Day</button>
+</div>
 
-    <div id="phrases"></div>
-  </div>
+<div id="phrases"></div>
+
+</div>
 
 <script>
-  // --- Config ---
-  const intervals = [1,3,7,14,30,90,180];
-  const newPerDay = 7;
-  const CSV_PATH = "database_Phrases.csv"; // must exist next to index.html
 
-  // --- State ---
-  let phrases = [];
-  let csvLoaded = false;
+let database = [];
 
-  // --- CSV parser with quotes support ---
-  function parseCSV(text) {
-    // Normalize newlines and strip BOM
-    text = text.replace(/^\\uFEFF/, "").replace(/\\r\\n/g, "\\n").replace(/\\r/g, "\\n");
-    const rows = [];
-    let row = [];
-    let cur = "";
-    let inQuotes = false;
+// AUTO LOAD CSV
+fetch("database_Phrases.csv")
+.then(r => r.text())
+.then(text => {
+    database = parseCSV(text);
+    document.getElementById("status").innerHTML = "CSV loaded successfully";
+})
+.catch(e => {
+    document.getElementById("status").innerHTML = "CSV failed to load: " + e.message;
+});
 
-    for (let i = 0; i < text.length; i++) {
-      const c = text[i];
+function parseCSV(text) {
 
-      if (inQuotes) {
-        if (c === '"') {
-          // escaped quote
-          if (text[i+1] === '"') {
-            cur += '"';
-            i++;
-          } else {
-            inQuotes = false;
-          }
-        } else {
-          cur += c;
-        }
-      } else {
-        if (c === '"') {
-          inQuotes = true;
-        } else if (c === ",") {
-          row.push(cur);
-          cur = "";
-        } else if (c === "\\n") {
-          row.push(cur);
-          rows.push(row);
-          row = [];
-          cur = "";
-        } else {
-          cur += c;
-        }
-      }
+    // AUTO-DETECT delimiter
+    let delimiter = ",";
+    if (text.includes(";") && text.split("\n")[0].includes(";")) {
+        delimiter = ";";
     }
-    // last cell
-    if (cur.length > 0 || row.length > 0) {
-      row.push(cur);
-      rows.push(row);
-    }
-    return rows;
-  }
 
-  function setCsvState(msg, ok=true) {
-    const el = document.getElementById("csvState");
-    el.textContent = msg;
-    el.style.borderColor = ok ? "#d1d5db" : "#ef4444";
-    el.style.color = ok ? "#6b7280" : "#b91c1c";
-  }
+    const lines = text.trim().split("\n");
+    const headers = lines[0].split(delimiter).map(h => h.trim());
 
-  async function fetchCSV(cacheBust=true) {
-    const url = cacheBust ? `${CSV_PATH}?v=${Date.now()}` : CSV_PATH;
-    const res = await fetch(url, { cache: "no-store" });
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    return await res.text();
-  }
-
-  async function loadCSV(cacheBust=true) {
-    csvLoaded = false;
-    phrases = [];
-    setCsvState("CSV: loading…");
-    document.getElementById("loadDayBtn").disabled = true;
-    document.getElementById("nextDayBtn").disabled = true;
-
-    try {
-      const text = await fetchCSV(cacheBust);
-      const rows = parseCSV(text);
-
-      if (!rows.length) throw new Error("Empty CSV");
-
-      // Header mapping (more robust than fixed positions)
-      const header = rows[0].map(h => (h || "").trim());
-      const idx = (name) => header.findIndex(h => h.toLowerCase() === name.toLowerCase());
-
-      const iId = idx("id");
-      const iEn = idx("phrase_en");
-      const iSk = idx("phrase_sk");
-      const iEx1 = idx("example_1");
-      const iEx2 = idx("example_2");
-      const iEx3 = idx("example_3");
-
-      if (iId === -1 || iEn === -1) {
+    if (!headers.includes("id") || !headers.includes("phrase_en")) {
         throw new Error("CSV missing required columns: id, phrase_en");
-      }
-
-      const dataRows = rows.slice(1).filter(r => r.some(cell => (cell || "").trim() !== ""));
-
-      phrases = dataRows.map(r => ({
-        id: Number((r[iId] || "").trim()),
-        en: (r[iEn] || "").trim(),
-        sk: iSk !== -1 ? (r[iSk] || "").trim() : "",
-        ex1: iEx1 !== -1 ? (r[iEx1] || "").trim() : "",
-        ex2: iEx2 !== -1 ? (r[iEx2] || "").trim() : "",
-        ex3: iEx3 !== -1 ? (r[iEx3] || "").trim() : ""
-      })).filter(p => p.en); // keep only rows with English phrase
-
-      csvLoaded = true;
-      setCsvState(`CSV: loaded (${phrases.length} phrases)`);
-
-      document.getElementById("loadDayBtn").disabled = false;
-      document.getElementById("nextDayBtn").disabled = false;
-
-      restoreLastDayAndLoad();
-
-    } catch (e) {
-      console.error(e);
-      setCsvState(`CSV: failed to load (${e.message})`, false);
-      document.getElementById("progress").textContent =
-        "Tip: ensure database_Phrases.csv is in the same folder as index.html on GitHub Pages.";
-    }
-  }
-
-  function reloadCSV() {
-    loadCSV(true);
-  }
-
-  function restoreLastDayAndLoad() {
-    const lastDay = localStorage.getItem("sr_last_day");
-    if (lastDay) {
-      document.getElementById("dayInput").value = lastDay;
-    }
-    loadDay();
-  }
-
-  function saveLastDay(day) {
-    localStorage.setItem("sr_last_day", String(day));
-  }
-
-  function getDayNumber() {
-    const n = Number(document.getElementById("dayInput").value);
-    return Number.isFinite(n) && n >= 1 ? Math.floor(n) : 1;
-  }
-
-  function loadDay() {
-    if (!csvLoaded) return;
-
-    const day = getDayNumber();
-    document.getElementById("dayInput").value = day;
-    saveLastDay(day);
-
-    // NEW: you said "new at the end" earlier (review first, then new)
-    const startNew = (day - 1) * newPerDay;
-    const newOnes = phrases.slice(startNew, startNew + newPerDay);
-
-    // REVIEW: any phrase learned on (day - interval)
-    const review = [];
-    for (let i = 0; i < phrases.length; i++) {
-      const learnedDay = Math.ceil((i + 1) / newPerDay);
-      for (const int of intervals) {
-        if (day - int > 0 && learnedDay === (day - int)) {
-          review.push(phrases[i]);
-          break; // avoid duplicates for multiple intervals
-        }
-      }
     }
 
-    render(review, newOnes);
+    return lines.slice(1).map(line => {
+        const values = line.split(delimiter);
+        let obj = {};
+        headers.forEach((h,i)=>obj[h]=values[i]);
+        return obj;
+    });
 
-    document.getElementById("progress").textContent =
-      `Day ${day} • Review: ${review.length} • New: ${newOnes.length} • Total phrases: ${phrases.length}`;
-  }
+}
 
-  function nextDay() {
-    if (!csvLoaded) return;
-    const day = getDayNumber() + 1;
-    document.getElementById("dayInput").value = day;
-    loadDay();
-  }
+function loadDay() {
 
-  function render(review, newOnes) {
+    const day = parseInt(document.getElementById("dayInput").value);
+    const start = (day-1)*7;
+    const end = start+7;
+
+    const phrases = database.slice(start,end);
+
     const container = document.getElementById("phrases");
     container.innerHTML = "";
 
-    // REVIEW section
-    const hR = document.createElement("div");
-    hR.className = "section-title";
-    hR.textContent = "REVIEW";
-    container.appendChild(hR);
+    phrases.forEach(p=>{
+        const div = document.createElement("div");
+        div.className="phrase";
+        div.innerText = p.phrase_en;
+        container.appendChild(div);
+    });
 
-    if (!review.length) {
-      const p = document.createElement("div");
-      p.className = "status";
-      p.textContent = "No review items for this day.";
-      container.appendChild(p);
-    } else {
-      review.forEach(p => container.appendChild(createPhrase(p)));
-    }
+}
 
-    // spacer
-    const spacer = document.createElement("div");
-    spacer.className = "spacer";
-    container.appendChild(spacer);
+function nextDay(){
+    const input = document.getElementById("dayInput");
+    input.value = parseInt(input.value)+1;
+    loadDay();
+}
 
-    // NEW section
-    const hN = document.createElement("div");
-    hN.className = "section-title";
-    hN.textContent = "NEW";
-    container.appendChild(hN);
-
-    if (!newOnes.length) {
-      const p = document.createElement("div");
-      p.className = "status";
-      p.textContent = "No new items (you reached the end of the list for this day).";
-      container.appendChild(p);
-    } else {
-      newOnes.forEach(p => container.appendChild(createPhrase(p)));
-    }
-  }
-
-  function toggle(el) {
-    el.style.display = (el.style.display === "block") ? "none" : "block";
-  }
-
-  function createPhrase(p) {
-    const wrap = document.createElement("div");
-    wrap.className = "phrase";
-
-    const line = document.createElement("div");
-    line.className = "line";
-
-    const id = document.createElement("span");
-    id.className = "id";
-    id.textContent = String(p.id || "");
-
-    const en = document.createElement("span");
-    en.className = "en";
-    en.textContent = p.en;
-
-    const btns = document.createElement("div");
-    btns.className = "btns";
-
-    const sk = document.createElement("div");
-    sk.className = "translation";
-    sk.textContent = p.sk || "";
-
-    const ex = document.createElement("div");
-    ex.className = "examples";
-    ex.textContent = [p.ex1, p.ex2, p.ex3].filter(Boolean).join("\\n");
-
-    const btnSK = document.createElement("button");
-    btnSK.className = "btn-mini";
-    btnSK.textContent = "SK";
-    btnSK.disabled = !p.sk;
-    btnSK.onclick = () => toggle(sk);
-
-    const btnEX = document.createElement("button");
-    btnEX.className = "btn-mini";
-    btnEX.textContent = "Examples";
-    btnEX.disabled = !(p.ex1 || p.ex2 || p.ex3);
-    btnEX.onclick = () => toggle(ex);
-
-    btns.appendChild(btnSK);
-    btns.appendChild(btnEX);
-
-    line.appendChild(id);
-    line.appendChild(en);
-    line.appendChild(btns);
-
-    wrap.appendChild(line);
-    if (p.sk) wrap.appendChild(sk);
-    if (p.ex1 || p.ex2 || p.ex3) wrap.appendChild(ex);
-
-    return wrap;
-  }
-
-  // Auto-load CSV on page load
-  window.addEventListener("DOMContentLoaded", () => {
-    loadCSV(true);
-  });
 </script>
+
 </body>
 </html>
