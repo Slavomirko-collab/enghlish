@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SR-2555 Trainer</title>
+
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.header {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.section {
+    margin-top: 25px;
+}
+
+.section-title {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.phrase {
+    background: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    margin-bottom: 6px;
+}
+
+.phrase-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.phrase-number {
+    color: #888;
+    min-width: 30px;
+}
+
+.translation {
+    display: none;
+    margin-top: 5px;
+    padding-left: 40px;
+    font-size: 14px;
+    color: #1a73e8;
+}
+
+.examples {
+    display: none;
+    margin-top: 5px;
+    padding-left: 40px;
+    font-size: 14px;
+    color: #7b1fa2;
+}
+
+.status {
+    margin-top: 10px;
+    color: #666;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<div class="header">
+<h1>SR-2555 Trainer</h1>
+
+Day:
+<input type="number" id="dayInput" value="1" min="1">
+<button onclick="loadDay()">Load</button>
+
+<div class="status" id="status">Loading database...</div>
+
+</div>
+
+<div id="content"></div>
+
+</div>
+
+<script>
+
+const NEW_PER_DAY = 7;
+const INTERVALS = [180,90,30,14,7,3,1];
+
+let phrases = [];
+
+async function loadCSV() {
+
+    try {
+
+        const response = await fetch("database_Phrases.csv");
+        const text = await response.text();
+
+        parseCSV(text);
+
+        document.getElementById("status").innerText =
+            "Loaded: " + phrases.length + " phrases";
+
+        loadDay();
+
+    } catch(e) {
+
+        document.getElementById("status").innerText =
+            "Error loading database_Phrases.csv";
+
+    }
+
+}
+
+function parseCSV(text) {
+
+    phrases = [];
+
+    const lines = text.split(/\r?\n/);
+
+    for (let i = 1; i < lines.length; i++) {
+
+        if (!lines[i].trim()) continue;
+
+        const parts = lines[i].split(";");
+
+        phrases.push({
+            id: parseInt(parts[0]),
+            en: parts[1] || "",
+            sk: parts[2] || "",
+            ex1: parts[3] || "",
+            ex2: parts[4] || "",
+            ex3: parts[5] || ""
+        });
+    }
+}
+
+function getBlock(day) {
+
+    const start = (day - 1) * NEW_PER_DAY + 1;
+    const end = day * NEW_PER_DAY;
+
+    return phrases.filter(p => p.id >= start && p.id <= end);
+}
+
+function toggle(button, cls) {
+
+    const el = button.closest(".phrase").querySelector("." + cls);
+
+    el.style.display =
+        el.style.display === "block" ? "none" : "block";
+
+}
+
+function createPhraseElement(p) {
+
+    const div = document.createElement("div");
+
+    div.className = "phrase";
+
+    div.innerHTML = `
+        <div class="phrase-row">
+            <div class="phrase-number">${p.id}</div>
+            <div>${p.en}</div>
+            <button onclick="toggle(this,'translation')">SK</button>
+            <button onclick="toggle(this,'examples')">Examples</button>
+        </div>
+        <div class="translation">${p.sk}</div>
+        <div class="examples">
+            ${p.ex1 ? "<div>"+p.ex1+"</div>" : ""}
+            ${p.ex2 ? "<div>"+p.ex2+"</div>" : ""}
+            ${p.ex3 ? "<div>"+p.ex3+"</div>" : ""}
+        </div>
+    `;
+
+    return div;
+}
+
+function loadDay() {
+
+    if (!phrases.length) return;
+
+    const day = parseInt(dayInput.value);
+
+    content.innerHTML = "";
+
+    INTERVALS.forEach(interval => {
+
+        const review = getBlock(day - interval);
+
+        if (!review.length) return;
+
+        const sec = document.createElement("div");
+        sec.className = "section";
+        sec.innerHTML = "<div class='section-title'>REVIEW ("+interval+")</div>";
+
+        review.forEach(p => sec.appendChild(createPhraseElement(p)));
+
+        content.appendChild(sec);
+
+    });
+
+    const newBlock = getBlock(day);
+
+    const sec = document.createElement("div");
+    sec.className = "section";
+    sec.innerHTML = "<div class='section-title'>NEW</div>";
+
+    newBlock.forEach(p => sec.appendChild(createPhraseElement(p)));
+
+    content.appendChild(sec);
+}
+
+loadCSV();
+
+</script>
+
+</body>
+</html>
