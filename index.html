@@ -4,127 +4,226 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SR-2555 Trainer</title>
+
 <style>
 body {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial;
-  background: #f4f6f8;
-  margin: 0;
-  padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+    padding: 20px;
 }
+
 .container {
-  max-width: 900px;
-  margin: auto;
-  background: white;
-  padding: 24px;
-  border-radius: 12px;
-  box-shadow: 0 6px 24px rgba(0,0,0,.08);
+    max-width: 800px;
+    margin: auto;
 }
-h1 {
-  font-size: 42px;
-  margin-bottom: 10px;
+
+.header {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
-button {
-  padding: 10px 16px;
-  border-radius: 8px;
-  border: none;
-  background: #e5e7eb;
-  cursor: pointer;
+
+.section {
+    margin-top: 25px;
 }
-button:hover {
-  background: #d1d5db;
+
+.section-title {
+    font-weight: bold;
+    margin-bottom: 8px;
 }
-.error {
-  color: #b91c1c;
-  margin: 10px 0;
-}
+
 .phrase {
-  padding: 10px;
-  border-bottom: 1px solid #eee;
+    background: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    margin-bottom: 6px;
+}
+
+.phrase-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.phrase-number {
+    color: #888;
+    min-width: 30px;
+}
+
+.translation {
+    display: none;
+    margin-top: 5px;
+    padding-left: 40px;
+    font-size: 14px;
+    color: #1a73e8;
+}
+
+.examples {
+    display: none;
+    margin-top: 5px;
+    padding-left: 40px;
+    font-size: 14px;
+    color: #7b1fa2;
+}
+
+.status {
+    margin-top: 10px;
+    color: #666;
 }
 </style>
+
 </head>
 <body>
 
 <div class="container">
+
+<div class="header">
 <h1>SR-2555 Trainer</h1>
 
-<div id="status">Loading CSV automatically...</div>
-
-<div>
 Day:
 <input type="number" id="dayInput" value="1" min="1">
-<button onclick="loadDay()">Load Day</button>
-<button onclick="nextDay()">Next Day</button>
+<button onclick="loadDay()">Load</button>
+
+<div class="status" id="status">Loading database...</div>
+
 </div>
 
-<div id="phrases"></div>
+<div id="content"></div>
 
 </div>
 
 <script>
 
-let database = [];
+const NEW_PER_DAY = 7;
+const INTERVALS = [180,90,30,14,7,3,1];
 
-// AUTO LOAD CSV
-fetch("database_Phrases.csv")
-.then(r => r.text())
-.then(text => {
-    database = parseCSV(text);
-    document.getElementById("status").innerHTML = "CSV loaded successfully";
-})
-.catch(e => {
-    document.getElementById("status").innerHTML = "CSV failed to load: " + e.message;
-});
+let phrases = [];
+
+async function loadCSV() {
+
+    try {
+
+        const response = await fetch("database_Phrases.csv");
+        const text = await response.text();
+
+        parseCSV(text);
+
+        document.getElementById("status").innerText =
+            "Loaded: " + phrases.length + " phrases";
+
+        loadDay();
+
+    } catch(e) {
+
+        document.getElementById("status").innerText =
+            "Error loading database_Phrases.csv";
+
+    }
+
+}
 
 function parseCSV(text) {
 
-    // AUTO-DETECT delimiter
-    let delimiter = ",";
-    if (text.includes(";") && text.split("\n")[0].includes(";")) {
-        delimiter = ";";
+    phrases = [];
+
+    const lines = text.split(/\r?\n/);
+
+    for (let i = 1; i < lines.length; i++) {
+
+        if (!lines[i].trim()) continue;
+
+        const parts = lines[i].split(";");
+
+        phrases.push({
+            id: parseInt(parts[0]),
+            en: parts[1] || "",
+            sk: parts[2] || "",
+            ex1: parts[3] || "",
+            ex2: parts[4] || "",
+            ex3: parts[5] || ""
+        });
     }
+}
 
-    const lines = text.trim().split("\n");
-    const headers = lines[0].split(delimiter).map(h => h.trim());
+function getBlock(day) {
 
-    if (!headers.includes("id") || !headers.includes("phrase_en")) {
-        throw new Error("CSV missing required columns: id, phrase_en");
-    }
+    const start = (day - 1) * NEW_PER_DAY + 1;
+    const end = day * NEW_PER_DAY;
 
-    return lines.slice(1).map(line => {
-        const values = line.split(delimiter);
-        let obj = {};
-        headers.forEach((h,i)=>obj[h]=values[i]);
-        return obj;
-    });
+    return phrases.filter(p => p.id >= start && p.id <= end);
+}
 
+function toggle(button, cls) {
+
+    const el = button.closest(".phrase").querySelector("." + cls);
+
+    el.style.display =
+        el.style.display === "block" ? "none" : "block";
+
+}
+
+function createPhraseElement(p) {
+
+    const div = document.createElement("div");
+
+    div.className = "phrase";
+
+    div.innerHTML = `
+        <div class="phrase-row">
+            <div class="phrase-number">${p.id}</div>
+            <div>${p.en}</div>
+            <button onclick="toggle(this,'translation')">SK</button>
+            <button onclick="toggle(this,'examples')">Examples</button>
+        </div>
+        <div class="translation">${p.sk}</div>
+        <div class="examples">
+            ${p.ex1 ? "<div>"+p.ex1+"</div>" : ""}
+            ${p.ex2 ? "<div>"+p.ex2+"</div>" : ""}
+            ${p.ex3 ? "<div>"+p.ex3+"</div>" : ""}
+        </div>
+    `;
+
+    return div;
 }
 
 function loadDay() {
 
-    const day = parseInt(document.getElementById("dayInput").value);
-    const start = (day-1)*7;
-    const end = start+7;
+    if (!phrases.length) return;
 
-    const phrases = database.slice(start,end);
+    const day = parseInt(dayInput.value);
 
-    const container = document.getElementById("phrases");
-    container.innerHTML = "";
+    content.innerHTML = "";
 
-    phrases.forEach(p=>{
-        const div = document.createElement("div");
-        div.className="phrase";
-        div.innerText = p.phrase_en;
-        container.appendChild(div);
+    INTERVALS.forEach(interval => {
+
+        const review = getBlock(day - interval);
+
+        if (!review.length) return;
+
+        const sec = document.createElement("div");
+        sec.className = "section";
+        sec.innerHTML = "<div class='section-title'>REVIEW ("+interval+")</div>";
+
+        review.forEach(p => sec.appendChild(createPhraseElement(p)));
+
+        content.appendChild(sec);
+
     });
 
+    const newBlock = getBlock(day);
+
+    const sec = document.createElement("div");
+    sec.className = "section";
+    sec.innerHTML = "<div class='section-title'>NEW</div>";
+
+    newBlock.forEach(p => sec.appendChild(createPhraseElement(p)));
+
+    content.appendChild(sec);
 }
 
-function nextDay(){
-    const input = document.getElementById("dayInput");
-    input.value = parseInt(input.value)+1;
-    loadDay();
-}
+loadCSV();
 
 </script>
 
