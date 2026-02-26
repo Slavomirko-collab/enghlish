@@ -96,6 +96,36 @@ body {
     flex: 1;
 }
 
+
+.section-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.section-check {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.collapse-btn {
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 6px;
+    padding: 2px 8px;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.collapse-btn:hover {
+    background: #f3f3f3;
+}
+
+.section.done .section-title {
+    opacity: 0.6;
+}
+
 </style>
 
 </head>
@@ -247,6 +277,77 @@ function flipSection(btn) {
 
 }
 
+function applyDoneState(sectionEl) {
+
+    const key = sectionEl.getAttribute("data-key");
+
+    if (!key) return;
+
+    const val = localStorage.getItem("sr2555_done_" + key);
+
+    const checked = val === "1";
+
+    const cb = sectionEl.querySelector(".section-check");
+
+    if (cb) cb.checked = checked;
+
+    sectionEl.classList.toggle("done", checked);
+
+}
+
+function applyCollapseState(sectionEl, collapsed) {
+
+    const btn = sectionEl.querySelector(".collapse-btn");
+
+    if (btn) btn.innerText = collapsed ? "▶" : "▼";
+
+    const items = sectionEl.querySelectorAll(".phrase");
+
+    items.forEach(it => {
+
+        it.style.display = collapsed ? "none" : "";
+
+    });
+
+}
+
+function toggleDone(cb) {
+
+    const sectionEl = cb.closest(".section");
+
+    if (!sectionEl) return;
+
+    const key = sectionEl.getAttribute("data-key");
+
+    if (!key) return;
+
+    localStorage.setItem("sr2555_done_" + key, cb.checked ? "1" : "0");
+
+    sectionEl.classList.toggle("done", cb.checked);
+
+}
+
+function toggleCollapse(btn) {
+
+    const sectionEl = btn.closest(".section");
+
+    if (!sectionEl) return;
+
+    const key = sectionEl.getAttribute("data-key");
+
+    if (!key) return;
+
+    const collapsed = sectionEl.getAttribute("data-collapsed") === "1";
+
+    sectionEl.setAttribute("data-collapsed", collapsed ? "0" : "1");
+
+    localStorage.setItem("sr2555_collapsed_" + key, collapsed ? "0" : "1");
+
+    applyCollapseState(sectionEl, !collapsed);
+
+}
+
+
 
 function createPhraseElement(p) {
 
@@ -290,10 +391,14 @@ function loadDay() {
         sec.className = "section";
         sec.innerHTML = "<div class='section-title'><div class='section-title-row'><div>REVIEW ("+interval+"–"+reviewCountForInterval(interval)+")</div><button class='flip-btn' onclick='flipSection(this)' title='Flip language for this block'>⇄</button></div></div>";
         sec.setAttribute("data-flipped","0");
+        sec.setAttribute("data-key","day-"+day+"-review-"+interval);
+        sec.setAttribute("data-collapsed", localStorage.getItem("sr2555_collapsed_" + sec.getAttribute("data-key")) === "1" ? "1" : "0");
 
         review.forEach(p => sec.appendChild(createPhraseElement(p)));
 
         applySectionLanguage(sec, false);
+        applyDoneState(sec);
+        applyCollapseState(sec, sec.getAttribute("data-collapsed") === "1");
 
         content.appendChild(sec);
 
@@ -305,10 +410,14 @@ function loadDay() {
     sec.className = "section";
     sec.innerHTML = "<div class='section-title'><div class='section-title-row'><div>NEW</div><button class='flip-btn' onclick='flipSection(this)' title='Flip language for this block'>⇄</button></div></div>";
     sec.setAttribute("data-flipped","0");
+        sec.setAttribute("data-key","day-"+day+"-review-"+interval);
+        sec.setAttribute("data-collapsed", localStorage.getItem("sr2555_collapsed_" + sec.getAttribute("data-key")) === "1" ? "1" : "0");
 
     newBlock.forEach(p => sec.appendChild(createPhraseElement(p)));
 
     applySectionLanguage(sec, false);
+    applyDoneState(sec);
+    applyCollapseState(sec, sec.getAttribute("data-collapsed") === "1");
 
     content.appendChild(sec);
 }
