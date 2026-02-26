@@ -72,6 +72,30 @@ body {
     margin-top: 10px;
     color: #666;
 }
+
+.section-title-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.flip-btn {
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 6px;
+    padding: 2px 8px;
+    cursor: pointer;
+}
+
+.flip-btn:hover {
+    background: #f3f3f3;
+}
+
+.phrase-main {
+    flex: 1;
+}
+
 </style>
 
 </head>
@@ -98,6 +122,7 @@ Day:
 
 const NEW_PER_DAY = 7;
 const INTERVALS = [180,90,30,14,7,3,1];
+const ASC_INTERVALS = [...INTERVALS].reverse();
 
 let phrases = [];
 
@@ -164,6 +189,65 @@ function toggle(button, cls) {
 
 }
 
+function escapeHtml(str) {
+    return (str || "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+}
+
+function reviewCountForInterval(interval) {
+    const idx = ASC_INTERVALS.indexOf(interval);
+    return idx === -1 ? "" : (idx + 1) + "x";
+}
+
+function applySectionLanguage(sectionEl, flipped) {
+
+    const phrasesEls = sectionEl.querySelectorAll(".phrase");
+
+    phrasesEls.forEach(ph => {
+
+        const main = ph.querySelector(".phrase-main");
+        const tr = ph.querySelector(".translation");
+        const trBtn = ph.querySelector(".translation-btn");
+
+        if (!main || !tr || !trBtn) return;
+
+        if (flipped) {
+
+            main.innerHTML = main.getAttribute("data-sk") || "";
+            tr.innerHTML = tr.getAttribute("data-en") || "";
+            trBtn.innerText = "EN";
+
+        } else {
+
+            main.innerHTML = main.getAttribute("data-en") || "";
+            tr.innerHTML = tr.getAttribute("data-sk") || "";
+            trBtn.innerText = "SK";
+
+        }
+
+    });
+
+}
+
+function flipSection(btn) {
+
+    const sectionEl = btn.closest(".section");
+
+    if (!sectionEl) return;
+
+    const flipped = sectionEl.getAttribute("data-flipped") === "1";
+
+    sectionEl.setAttribute("data-flipped", flipped ? "0" : "1");
+
+    applySectionLanguage(sectionEl, !flipped);
+
+}
+
+
 function createPhraseElement(p) {
 
     const div = document.createElement("div");
@@ -173,11 +257,11 @@ function createPhraseElement(p) {
     div.innerHTML = `
         <div class="phrase-row">
             <div class="phrase-number">${p.id}</div>
-            <div>${p.en}</div>
-            <button onclick="toggle(this,'translation')">SK</button>
+            <div class="phrase-main" data-en="${escapeHtml(p.en)}" data-sk="${escapeHtml(p.sk)}">${p.en}</div>
+            <button class="translation-btn" onclick="toggle(this,'translation')">SK</button>
             <button onclick="toggle(this,'examples')">Examples</button>
         </div>
-        <div class="translation">${p.sk}</div>
+        <div class="translation" data-en="${escapeHtml(p.en)}" data-sk="${escapeHtml(p.sk)}">${p.sk}</div>
         <div class="examples">
             ${p.ex1 ? "<div>"+p.ex1+"</div>" : ""}
             ${p.ex2 ? "<div>"+p.ex2+"</div>" : ""}
@@ -204,9 +288,12 @@ function loadDay() {
 
         const sec = document.createElement("div");
         sec.className = "section";
-        sec.innerHTML = "<div class='section-title'>REVIEW ("+interval+")</div>";
+        sec.innerHTML = "<div class='section-title'><div class='section-title-row'><div>REVIEW ("+interval+"–"+reviewCountForInterval(interval)+")</div><button class='flip-btn' onclick='flipSection(this)' title='Flip language for this block'>⇄</button></div></div>";
+        sec.setAttribute("data-flipped","0");
 
         review.forEach(p => sec.appendChild(createPhraseElement(p)));
+
+        applySectionLanguage(sec, false);
 
         content.appendChild(sec);
 
@@ -216,9 +303,12 @@ function loadDay() {
 
     const sec = document.createElement("div");
     sec.className = "section";
-    sec.innerHTML = "<div class='section-title'>NEW</div>";
+    sec.innerHTML = "<div class='section-title'><div class='section-title-row'><div>NEW</div><button class='flip-btn' onclick='flipSection(this)' title='Flip language for this block'>⇄</button></div></div>";
+    sec.setAttribute("data-flipped","0");
 
     newBlock.forEach(p => sec.appendChild(createPhraseElement(p)));
+
+    applySectionLanguage(sec, false);
 
     content.appendChild(sec);
 }
