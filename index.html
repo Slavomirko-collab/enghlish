@@ -277,51 +277,12 @@ function flipSection(btn) {
 
 }
 
-function applyDoneState(sectionEl) {
 
-    const key = sectionEl.getAttribute("data-key");
-
-    if (!key) return;
-
-    const val = localStorage.getItem("sr2555_done_" + key);
-
-    const checked = val === "1";
-
-    const cb = sectionEl.querySelector(".section-check");
-
-    if (cb) cb.checked = checked;
-
-    sectionEl.classList.toggle("done", checked);
-
-}
-
-function applyCollapseState(sectionEl, collapsed) {
-
-    const btn = sectionEl.querySelector(".collapse-btn");
-
-    if (btn) btn.innerText = collapsed ? "▶" : "▼";
-
-    const items = sectionEl.querySelectorAll(".phrase");
-
-    items.forEach(it => {
-
-        it.style.display = collapsed ? "none" : "";
-
-    });
-
-}
-
-function toggleDone(cb) {
+function toggleDoneVisual(cb) {
 
     const sectionEl = cb.closest(".section");
 
     if (!sectionEl) return;
-
-    const key = sectionEl.getAttribute("data-key");
-
-    if (!key) return;
-
-    localStorage.setItem("sr2555_done_" + key, cb.checked ? "1" : "0");
 
     sectionEl.classList.toggle("done", cb.checked);
 
@@ -333,17 +294,19 @@ function toggleCollapse(btn) {
 
     if (!sectionEl) return;
 
-    const key = sectionEl.getAttribute("data-key");
-
-    if (!key) return;
-
     const collapsed = sectionEl.getAttribute("data-collapsed") === "1";
 
     sectionEl.setAttribute("data-collapsed", collapsed ? "0" : "1");
 
-    localStorage.setItem("sr2555_collapsed_" + key, collapsed ? "0" : "1");
+    btn.innerText = collapsed ? "▼" : "▶";
 
-    applyCollapseState(sectionEl, !collapsed);
+    const items = sectionEl.querySelectorAll(".phrase");
+
+    items.forEach(it => {
+
+        it.style.display = collapsed ? "" : "none";
+
+    });
 
 }
 
@@ -389,16 +352,13 @@ function loadDay() {
 
         const sec = document.createElement("div");
         sec.className = "section";
-        sec.innerHTML = "<div class='section-title'><div class='section-title-row'><div>REVIEW ("+interval+"–"+reviewCountForInterval(interval)+")</div><button class='flip-btn' onclick='flipSection(this)' title='Flip language for this block'>⇄</button></div></div>";
+        sec.innerHTML = "<div class='section-title'><div class='section-title-row'><div>REVIEW ("+interval+"–"+reviewCountForInterval(interval)+")</div><div class='section-controls'><input type='checkbox' class='section-check' onchange='toggleDoneVisual(this)' title='Mark this block done'><button class='collapse-btn' onclick='toggleCollapse(this)' title='Collapse/expand this block'>▼</button><button class='flip-btn' onclick='flipSection(this)' title='Flip language for this block'>⇄</button></div></div></div>";
         sec.setAttribute("data-flipped","0");
-        sec.setAttribute("data-key","day-"+day+"-review-"+interval);
-        sec.setAttribute("data-collapsed", localStorage.getItem("sr2555_collapsed_" + sec.getAttribute("data-key")) === "1" ? "1" : "0");
+        sec.setAttribute("data-collapsed","0");
 
         review.forEach(p => sec.appendChild(createPhraseElement(p)));
 
         applySectionLanguage(sec, false);
-        applyDoneState(sec);
-        applyCollapseState(sec, sec.getAttribute("data-collapsed") === "1");
 
         content.appendChild(sec);
 
@@ -408,16 +368,13 @@ function loadDay() {
 
     const sec = document.createElement("div");
     sec.className = "section";
-    sec.innerHTML = "<div class='section-title'><div class='section-title-row'><div>NEW</div><button class='flip-btn' onclick='flipSection(this)' title='Flip language for this block'>⇄</button></div></div>";
+    sec.innerHTML = "<div class='section-title'><div class='section-title-row'><div>NEW</div><div class='section-controls'><input type='checkbox' class='section-check' onchange='toggleDoneVisual(this)' title='Mark this block done'><button class='collapse-btn' onclick='toggleCollapse(this)' title='Collapse/expand this block'>▼</button><button class='flip-btn' onclick='flipSection(this)' title='Flip language for this block'>⇄</button></div></div></div>";
     sec.setAttribute("data-flipped","0");
-        sec.setAttribute("data-key","day-"+day+"-review-"+interval);
-        sec.setAttribute("data-collapsed", localStorage.getItem("sr2555_collapsed_" + sec.getAttribute("data-key")) === "1" ? "1" : "0");
+    sec.setAttribute("data-collapsed","0");
 
     newBlock.forEach(p => sec.appendChild(createPhraseElement(p)));
 
     applySectionLanguage(sec, false);
-    applyDoneState(sec);
-    applyCollapseState(sec, sec.getAttribute("data-collapsed") === "1");
 
     content.appendChild(sec);
 }
