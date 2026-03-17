@@ -199,3 +199,103 @@ id;phrase_en;phrase_sk;example_1;example_2;example_3
 198;It’s hard for me to trust him again.;Je pre mňa ťažké mu znova dôverovať.;;;
 199;I’m impressed by your progress.;Som ohromený tvojím pokrokom.;;;
 200;It’s nice of you to invite us.;Je to od vás milé, že ste nás pozvali.;;;
+201;It’s about time you made up your mind.;Už je najvyšší čas, aby si sa rozhodol.;It’s about time you [past tense].;It's about time we left.;It's about time he found a job.
+202;I’d rather you didn’t tell anyone about this.;Bol by som radšej, keby si o tomto nikomu nehovoril.;I’d rather you [past tense].;I'd rather you stayed here.;I'd rather she didn't come.
+203;The more you practice, the easier it gets.;Čím viac trénuješ, tým je to jednoduchšie.;The [comparative], the [comparative].;The sooner, the better.;The more I know him, the more I like him.
+204;I’m looking forward to catching up with you.;Teším sa, až ťa dobehnem (pokecáme o novinkách).;To catch up with someone.;We need to catch up soon.;Let's catch up over coffee.
+205;I can’t help feeling that something is wrong.;Nemôžem si pomôcť, ale mám pocit, že niečo nie je v poriadku.;I can’t help [verb+ing].;I can't help laughing at his jokes.;She couldn't help crying.
+206;It’s no use crying over spilled milk.;Nemá zmysel plakať nad rozliatym mliekom.;It’s no use [verb+ing].;It's no use trying to convince him.;It's no use waiting for the bus now.
+207;I happened to overhear their conversation.;Náhoda chcela, že som si vypočul ich rozhovor.;I happened to [verb].;Do you happen to know where she is?;I happened to see him yesterday.
+208;As far as I’m concerned, the matter is closed.;Pokiaľ ide o mňa, tá vec je uzavretá.;As far as I’m concerned...;As far as I'm concerned, you can stay.;As far as I know, he's still in London.
+209;We might as well stay here until the rain stops.;Môžeme tu rovno zostať, kým neprestane pršať.;Might as well [verb].;We might as well start now.;You might as well tell the truth.
+210;He’s on the verge of a nervous breakdown.;Je na pokraji nervového zrútenia.;On the verge of [noun/ing].;They are on the verge of signing the contract.;The species is on the verge of extinction.
+211;I’m not in the mood for going out tonight.;Nemám náladu na to, aby som išiel večer von.;To be in the mood for [noun/ing].;Are you in the mood for a movie?;I'm not in the mood to talk right now.
+212;Suppose you won the lottery, what would you do?;Predpokladajme, že by si vyhral lotériu, čo by si robil?;Suppose [past tense]...;Suppose he doesn't show up?;Suppose we went by train instead?
+213;I’ve been tied up with work all day.;Celý deň som bol zavalený prácou.;To be tied up (busy).;I'm tied up at the moment.;She's tied up in a meeting.
+214;It’s unlikely that they will agree to our terms.;Je nepravdepodobné, že pristúpia na naše podmienky.;It’s unlikely that...;It's unlikely to happen.;Is it unlikely that she will come?
+215;I’ve run out of patience with them.;Došla mi s nimi trpezlivosť.;To run out of [something].;We've run out of milk.;I'm running out of time.
+216;In spite of the weather, we went for a walk.;Napriek počasiu sme išli na prechádzku.;In spite of [noun/ing].;In spite of being tired, she worked late.;He failed in spite of his efforts.
+217;It never occurred to me that he was lying.;Nikdy mi nenapadlo, že klame.;It (never) occurred to me that...;Did it occur to you to ask him?;It occurred to me that I forgot my keys.
+218;I can’t make head or tail of this document.;Neviem z tohto dokumentu vyjsť (nerozumiem mu).;Can't make head or tail of [something].;I can't make head or tail of his handwriting.;We couldn't make head or tail of the map.
+219;There’s no point in arguing with him.;Nemá zmysel sa s ním hádať.;There’s no point in [verb+ing].;What's the point of waiting?;There was no point in staying longer.
+220;I’ll get around to fixing it eventually.;Nakoniec sa dostanem k tomu, aby som to opravil.;To get around to [verb+ing].;I haven't got around to reading that book yet.;When will you get around to doing your homework?
+221;How come you didn’t tell me before?;Ako to, že si mi to nepovedal predtým?;How come [sentence]?;How come you're so late?;How come they didn't invite us?
+222;Judging by his face, he’s not happy.;Súdiac podľa jeho tváre, nie je šťastný.;Judging by [something]...;Judging by the sky, it's going to rain.;Judging by her accent, she's from Australia.
+223;I’m under the impression that we’ve met before.;Mám dojem, že sme sa už stretli.;To be under the impression that...;He was under the impression that the meeting was canceled.;I was under the impression you knew.
+224;It stands to reason that they will be late.;Je logické (dáva to zmysel), že budú meškať.;It stands to reason that...;It stands to reason that prices will rise.;It stands to reason that if you don't study, you won't pass.
+225;I’ve put off doing my taxes for too long.;Príliš dlho som odkladal podávanie daní.;To put off [verb+ing].;Don't put off until tomorrow what you can do today.;They put off the wedding until next year.
+226;He takes after his father in many ways.;V mnohých ohľadoch sa podobá na svojho otca.;To take after someone.;Does she take after her mother?;He takes after his grandfather.
+227;I can’t put my finger on what’s wrong.;Neviem presne pomenovať (ukázať), čo je zle.;To put one's finger on [something].;Something is different, but I can't put my finger on it.;I couldn't put my finger on the reason for my anxiety.
+228;It’s hard to keep track of all the changes.;Je ťažké sledovať (mať prehľad o) všetky tie zmeny.;To keep track of [something].;How do you keep track of your expenses?;I've lost track of time.
+229;I’d like to point out that we are over budget.;Rád by som poukázal na to, že sme nad rozpočtom.;To point out that...;She pointed out a mistake in the report.;I must point out that time is running out.
+230;He’s been going through a lot lately.;V poslednom čase si toho veľa prešiel (zažil zlé veci).;To go through [something].;She went through a difficult divorce.;We are going through some changes at work.
+231;You can count on me whenever you need help.;Môžeš so mnou rátať kedykoľvek budeš potrebovať pomoc.;To count on someone.;I'm counting on your support.;Can I count on you to be there?
+232;What if we tried a different approach?;Čo keby sme skúsili iný prístup?;What if [past tense]?;What if it rains?;What if we don't succeed?
+233;He’s been looking into the possibility of moving.;Skúmal možnosť sťahovania.;To look into [something].;The company is looking into new markets.;We are looking into ways to reduce costs.
+234;I’ve been struggling to keep up with the workload.;Mám problém stíhať to pracovné zaťaženie.;To keep up with [something].;It's hard to keep up with technology.;Slow down, I can't keep up with you.
+235;I’ve come to the conclusion that we need a change.;Dospel som k záveru, že potrebujeme zmenu.;To come to the conclusion that...;What conclusion did you come to?;I've come to the conclusion that he's right.
+236;He ended up working for a rival company.;Skončilo to tak, že pracoval pre konkurenčnú firmu.;To end up [verb+ing].;We got lost and ended up in a small village.;How did you end up here?
+237;It’s up to you to decide what to do next.;Je na tebe, aby si sa rozhodol, čo robiť ďalej.;It’s up to [someone] to [verb].;The choice is up to you.;It's not up to me to judge.
+238;I didn’t mean to hurt your feelings.;Nechcel som zraniť tvoje city.;I didn't mean to [verb].;I didn't mean to wake you up.;He didn't mean to be rude.
+239;I wish I had known about this earlier.;Kiežby som o tom vedel skôr.;I wish I had [past participle].;I wish I had more time.;I wish I hadn't said that.
+240;He tends to exaggerate his achievements.;Má tendenciu zveličovať svoje úspechy.;To tend to [verb].;Prices tend to rise in summer.;I tend to get nervous before exams.
+241;I can’t believe how much things have changed.;Nemôžem uveriť tomu, ako veľmi sa veci zmenili.;I can’t believe [how/what/that]...;I can't believe he's only twenty.;I can't believe it's already Friday.
+242;He was taken aback by her reaction.;Bol zaskočený jej reakciou.;To be taken aback (surprised).;I was taken aback by the news.;She was taken aback by his rudeness.
+243;I’ve been putting a lot of thought into this.;Veľa som nad tým premýšľal.;To put thought into [something].;You clearly put a lot of thought into this gift.;We need to put more thought into the plan.
+244;Is there any chance of getting a discount?;Existuje nejaká šanca na získanie zľavy?;Is there any chance of [verb+ing]?;Is there any chance of rain?;Is there any chance that he will come?
+245;I’m not sure if I can make it to the party.;Nie som si istý, či stihnem prísť na párty.;To make it to [somewhere/event].;Did you make it to the meeting on time?;I'm sorry, I can't make it tonight.
+246;It’s a matter of time before they find out.;Je to otázka času, kým na to prídu.;It’s a matter of time before...;It's only a matter of time.;It's a matter of life and death.
+247;I’m not very good at small talk.;Nie som veľmi dobrý v nezáväznej konverzácii.;To be good/bad at [something].;He's good at solving problems.;She's not very good at keeping secrets.
+248;He’s been looking for a way out of the situation.;Hľadal spôsob, ako sa z tej situácie dostať.;A way out of [something].;There's no way out.;We need to find a way out of this mess.
+249;I’m not in a position to give you advice.;Nie som v pozícii, aby som ti dával rady.;To be in a position to [verb].;I'm not in a position to help you right now.;Are you in a position to sign the contract?
+250;It goes without saying that we will help.;Netreba ani hovoriť (je to samozrejmé), že pomôžeme.;It goes without saying that...;It goes without saying that you're invited.;It goes without saying that safety comes first.
+251;I’ve been trying to get hold of you all morning.;Celé ráno som sa ťa snažil zastihnúť.;To get hold of [someone].;Where can I get hold of a copy?;I finally got hold of him yesterday.
+252;How do you go about finding a new job?;Ako postupuješ pri hľadaní novej práce?;To go about [doing something].;How should I go about applying?;He went about his business as usual.
+253;I’m looking forward to seeing how it turns out.;Teším sa na to, ako to dopadne.;To turn out (result).;It turned out better than expected.;As it turned out, he was right.
+254;I’ve been trying to keep a low profile lately.;V poslednom čase som sa snažil byť nenápadný.;To keep a low profile.;He's keeping a low profile until the scandal blows over.;I prefer to keep a low profile at work.
+255;It’s a long shot, but it might work.;Je to málo pravdepodobné, ale mohlo by to fungovať.;A long shot.;Winning the lottery is a long shot.;It's a long shot, but let's try it anyway.
+256;He’s been having second thoughts about the move.;Mal pochybnosti (prehodnocoval) o tom sťahovaní.;To have second thoughts.;Are you having second thoughts?;I'm having second thoughts about buying that car.
+257;I’m not sure what you’re getting at.;Nie som si istý, kam tým mieriš.;To get at (imply).;What are you getting at?;I don't know what she's getting at.
+258;It’s hard to tell the difference between them.;Je ťažké rozoznať medzi nimi rozdiel.;To tell the difference between...;Can you tell the difference?;It's hard to tell the difference between real and fake.
+259;I’ve been trying to get my point across.;Snažil som sa objasniť (presadiť) svoj názor.;To get one's point across.;It's hard to get your point across in a large meeting.;He finally got his point across.
+260;How long has this been going on?;Ako dlho to už trvá?;To go on (happen/continue).;What's going on?;This can't go on any longer.
+261;I’ve been looking for an excuse to visit you.;Hľadal som zámienku, aby som ťa navštívil.;An excuse to [verb].;I need an excuse to leave.;He's always looking for an excuse to complain.
+262;It’s high time we did something about it.;Je najvyšší čas, aby sme s tým niečo urobili.;It’s high time [past tense].;It's high time you cleaned your room.;It's high time the government took action.
+263;I’m not as young as I used to be.;Už nie som taký mladý, ako som býval.;Not as [adjective] as [someone] used to be.;I'm not as fit as I used to be.;The town isn't as quiet as it used to be.
+264;He’s been trying to get away with it for years.;Roky sa mu to snažilo prejsť (bez trestu).;To get away with [something].;He thought he could get away with murder.;How did she get away with it?
+265;I’m not sure if I can pull it off.;Nie som si istý, či to zvládnem (úspešne dokončím).;To pull it off.;It was a difficult task, but they pulled it off.;Do you think you can pull it off?
+266;It’s only a matter of time before he gives up.;Je to len otázka času, kým sa vzdá.;To give up.;Don't give up!;He gave up smoking last year.
+267;I’ve been trying to figure out a way to help.;Snažil som sa prísť na spôsob, ako pomôcť.;To figure out [something].;I can't figure out how to use this machine.;We need to figure out what to do next.
+268;It’s not as easy as it looks.;Nie je to také jednoduché, ako to vyzerá.;Not as [adjective] as it looks.;Cooking isn't as easy as it looks.;It's not as simple as it seems.
+269;He’s been trying to make up for lost time.;Snažil sa dohnať stratený čas.;To make up for [something].;Nothing can make up for the loss of a loved one.;I'm trying to make up for my mistake.
+270;I’m not sure what the future holds.;Nie som si istý, čo prinesie budúcnosť.;What the future holds.;Who knows what the future holds?;Whatever the future holds, we'll face it together.
+271;He’s been trying to get over his ex-girlfriend.;Snažil sa preniesť cez svoju bývalú priateľku.;To get over [someone/something].;It took her a long time to get over the flu.;I can't get over how much he's grown.
+272;I’m not sure if I should go or stay.;Nie som si istý, či mám ísť alebo zostať.;Whether to [verb] or [verb].;I don't know whether to laugh or cry.;We haven't decided whether to buy it or not.
+273;It’s hard to keep a straight face.;Je ťažké zachovať vážnu tvár.;To keep a straight face.;I couldn't keep a straight face when he told the joke.;It's important to keep a straight face during the interview.
+274;He’s been trying to get his act together.;Snažil sa dať dokopy (začať sa správať zodpovedne).;To get one's act together.;You need to get your act together if you want to keep your job.;I'm finally getting my act together.
+275;I’m not sure if I can count on him.;Nie som si istý, či s ním môžem počítať.;To count on [someone].;I'm counting on you!;Can I count on your help?
+276;It’s hard to put into words how I feel.;Je ťažké vyjadriť slovami, ako sa cítim.;To put into words.;I can't put into words how grateful I am.;Some things are hard to put into words.
+277;He’s been trying to get his point across.;Snažil sa objasniť svoju pointu.;To get one's point across.;I'm trying to get my point across.;Did you get your point across?
+278;I’m not sure if I can make it.;Nie som si istý, či to zvládnem (stihnem/dokážem).;To make it.;I'm sorry, I can't make it.;We made it just in time!
+279;It’s hard to keep up with the news.;Je ťažké držať krok so správami.;To keep up with [something].;I can't keep up with all the changes.;It's hard to keep up with him.
+280;He’s been trying to get a head start.;Snažil sa získať náskok.;A head start.;We need a head start.;Giving him a head start was a mistake.
+281;I’m not sure if I can afford it.;Nie som si istý, či si to môžem dovoliť.;To afford [something].;I can't afford to buy a new car.;Can you afford it?
+282;It’s hard to get used to the cold weather.;Je ťažké zvyknúť si na chladné počasie.;To get used to [something/doing something].;I'm getting used to it.;Have you got used to your new job yet?
+283;He’s been trying to get rid of his old car.;Snažil sa zbaviť svojho starého auta.;To get rid of [something].;I need to get rid of these old clothes.;How can I get rid of this headache?
+284;I’m not sure if I should tell him.;Nie som si istý, či mu to mám povedať.;Whether to [verb].;I'm not sure whether to go.;I don't know whether to tell her.
+285;It’s hard to keep a secret.;Je ťažké udržať tajomstvo.;To keep a secret.;Can you keep a secret?;I'm not very good at keeping secrets.
+286;He’s been trying to get in touch with you.;Snažil sa s tebou spojiť.;To get in touch with [someone].;I'll get in touch with you soon.;How can I get in touch with him?
+287;I’m not sure if I can trust him.;Nie som si istý, či mu môžem dôverovať.;To trust [someone].;I trust you.;Can I trust him?
+288;It’s hard to believe it’s already over.;Je ťažké uveriť, že už je po všetkom.;It's hard to believe [sentence].;I can't believe it.;It's hard to believe he's gone.
+289;He’s been trying to get a promotion.;Snažil sa o povýšenie.;To get a promotion.;I hope I get a promotion.;She got a promotion last month.
+290;I’m not sure if I can handle it.;Nie som si istý, či to zvládnem (uniesiem/vyriešim).;To handle [something].;I can handle it.;Can you handle the pressure?
+291;It’s hard to make a decision.;Je ťažké urobiť rozhodnutie.;To make a decision.;Have you made a decision yet?;It's a difficult decision to make.
+292;He’s been trying to get his life back on track.;Snažil sa vrátiť svoj život do starých koľají.;Back on track.;We need to get the project back on track.;Everything is back on track now.
+293;I’m not sure if I should laugh or cry.;Nie som si istý, či sa mám smiať alebo plakať.;Whether to [verb] or [verb].;I don't know whether to laugh or cry.;It was so funny I didn't know whether to laugh or cry.
+294;It’s hard to keep track of time.;Je ťažké sledovať čas.;To keep track of time.;I've lost track of time.;How do you keep track of time?
+295;He’s been trying to get his point across.;Snažil sa objasniť svoju pointu.;To get one's point across.;I'm trying to get my point across.;Did you get your point across?
+296;I’m not sure if I can make it to the meeting.;Nie som si istý, či stihnem prísť na stretnutie.;To make it to [somewhere].;I can't make it.;Did you make it?
+297;It’s hard to keep up with the demand.;Je ťažké držať krok s dopytom.;To keep up with [something].;We can't keep up with the demand.;It's hard to keep up with him.
+298;He’s been trying to get a refund.;Snažil sa o vrátenie peňazí.;To get a refund.;Can I get a refund?;I'd like a refund, please.
+299;I’m not sure if I should accept the offer.;Nie som si istý, či mám prijať ponuku.;Whether to [verb].;I'm not sure whether to accept.;I don't know whether to go.
+300;It’s hard to imagine what it was like.;Je ťažké si predstaviť, aké to bolo.;To imagine [what/how].;Can you imagine?;I can't imagine living there.
