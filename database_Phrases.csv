@@ -399,104 +399,212 @@ id;phrase_en;phrase_sk;example_1;example_2;example_3
 398;It's not worth it.;Nestojí to za to.;It's not worth it to buy a cheap phone.;It's not worth it to fix this old TV.;It's not worth it to wait any longer.
 399;I'll check it out.;Preverím to.;I'll check it out and get back to you.;I'll check it out on the website.;I'll check it out and let you know.
 400;What's the reason for it?;Aký je na to dôvod?;What's the reason for the delay?;What's the reason for your absence?;What's the reason for the meeting?
-401;;;;;
-402;;;;;
-403;;;;;
-404;;;;;
-405;;;;;
-406;;;;;
-407;;;;;
-408;;;;;
-409;;;;;
-410;;;;;
-411;;;;;
-412;;;;;
-413;;;;;
-414;;;;;
-415;;;;;
-416;;;;;
-417;;;;;
-418;;;;;
-419;;;;;
-420;;;;;
-421;;;;;
-422;;;;;
-423;;;;;
-424;;;;;
-425;;;;;
-426;;;;;
-427;;;;;
-428;;;;;
-429;;;;;
-430;;;;;
-431;;;;;
-432;;;;;
-433;;;;;
-434;;;;;
-435;;;;;
-436;;;;;
-437;;;;;
-438;;;;;
-439;;;;;
-440;;;;;
-441;;;;;
-442;;;;;
-443;;;;;
-444;;;;;
-445;;;;;
-446;;;;;
-447;;;;;
-448;;;;;
-449;;;;;
-450;;;;;
-451;;;;;
-452;;;;;
-453;;;;;
-454;;;;;
-455;;;;;
-456;;;;;
-457;;;;;
-458;;;;;
-459;;;;;
-460;;;;;
-461;;;;;
-462;;;;;
-463;;;;;
-464;;;;;
-465;;;;;
-466;;;;;
-467;;;;;
-468;;;;;
-469;;;;;
-470;;;;;
-471;;;;;
-472;;;;;
-473;;;;;
-474;;;;;
-475;;;;;
-476;;;;;
-477;;;;;
-478;;;;;
-479;;;;;
-480;;;;;
-481;;;;;
-482;;;;;
-483;;;;;
-484;;;;;
-485;;;;;
-486;;;;;
-487;;;;;
-488;;;;;
-489;;;;;
-490;;;;;
-491;;;;;
-492;;;;;
-493;;;;;
-494;;;;;
-495;;;;;
-496;;;;;
-497;;;;;
-498;;;;;
-499;;;;;
-500;;;;;
-501;;;;;
+401;What are your thoughts on this?;Aké sú vaše myšlienky na toto?;What are your thoughts on the proposal?;I'd love to hear your thoughts on the matter.;Does anyone have any other thoughts on this?
+402;I'd like to hear your perspective.;Rád by som počul vašu perspektívu.;I'd like to hear your perspective on this.;What is your perspective on the current situation?;We need to hear your perspective on the budget.
+403;Could you elaborate on that point?;Mohli by ste tento bod rozviesť?;Could you elaborate on that point please?;He asked me to elaborate on the new rules.;Can you elaborate on that point in the email?
+404;Does anyone have any objections?;Má niekto nejaké námietky?;Does anyone have any objections to this?;If anyone has any objections, please speak now.;I don't have any objections to the proposal.
+405;What's the reasoning behind this decision?;Aké je odôvodnenie tohto rozhodnutia?;What's the reasoning behind this decision today?;We don't understand the reasoning behind this move.;What's the reasoning behind this decision today?
+406;I'm not sure if I'm following.;Nie som si istý, či rozumiem.;I'm not sure if I'm following you.;Tell me if I'm not following the instructions.;I'm not sure if I'm following your argument.
+407;Let me put it another way.;Dovoľte mi to povedať inak.;Let me put it another way for you.;Let me put it another way so you understand.;Let me put it another way for the clients.
+408;How does this affect our timeline?;Ako to ovplyvní náš časový harmonogram?;How does this affect our timeline overall?;This change won't affect our timeline much.;How does this affect our timeline for delivery?
+409;Is there any room for improvement?;Je tam nejaký priestor na zlepšenie?;Is there any room for improvement here?;There is always room for improvement in our work.;There is no room for improvement in this case.
+410;What would you do in my shoes?;Čo by ste robili v mojej koži?;What would you do in my shoes now?;I would be very careful in your shoes.;What would you do in my shoes if you were me?
+411;I'm curious to know your opinion.;Zaujíma ma váš názor.;I'm curious to know your opinion on it.;I'm curious to know your opinion on the car.;I'm curious to know your opinion on the movie.
+412;Can we reach a compromise on this?;Môžeme v tomto dosiahnuť kompromis?;Can we reach a compromise on the price?;It is hard to reach a compromise with them.;Can we reach a compromise on the deadline?
+413;I'd like to point out one thing.;Rád by som upozornil na jednu vec.;I'd like to point out one thing first.;She wanted to point out one thing about the plan.;I'd like to point out one thing you missed.
+414;What's the worst-case scenario here?;Aký je tu najhorší možný scenár?;What's the worst-case scenario for the company?;We must prepare for the worst-case scenario.;The worst-case scenario is that we lose the house.
+415;I'll get right on it.;Hneď sa do toho pustím.;I'll get right on it immediately.;If you need the report, I'll get right on it.;Tell me what to do and I'll get right on it.
+416;It's just a matter of time.;Je to len otázka času.;It's just a matter of time before success.;It's just a matter of time before they find out.;It's just a matter of time before he arrives.
+417;I'm not in a position to say.;Nie som v pozícii, aby som to povedal.;I'm not in a position to say anything.;I'm not in a position to say who won.;I'm not in a position to say anything yet.
+418;That's exactly what I was thinking.;Presne to som si myslel.;That's exactly what I was thinking about.;That's exactly what I was thinking yesterday.;That's exactly what I was thinking just now.
+419;I'm afraid I don't see it that way.;Obávam sa, že to tak nevidím.;I'm afraid I don't see it that way.;I'm afraid I don't see it that way at all.;I'm afraid I don't see it that way at all.
+420;Could you give me some context?;Mohli by ste mi uviesť nejaký kontext?;Could you give me some context on this?;We need some context before we start.;Could you give me some context for this data?
+421;How do you plan to handle this?;Ako to plánujete zvládnuť?;How do you plan to handle this crisis?;She doesn't know how to handle this pressure.;How do you plan to handle this situation?
+422;I'd like to explore other options.;Rád by som preskúmal ďalšie možnosti.;I'd like to explore other options first.;Let's explore other options before we buy it.;I'd like to explore other options before we sign.
+423;It's on the tip of my tongue.;Mám to na jazyku.;It's on the tip of my tongue actually.;Wait, the name is on the tip of my tongue.;Wait, her name is on the tip of my tongue.
+424;I'll take your word for it.;Budem vám veriť.;I'll take your word for it this time.;He is honest, so I'll take his word for it.;He never lies, so I'll take his word for it.
+425;What are we aiming for today?;Na čo sa dnes zameriavame?;What are we aiming for today specifically?;What are we aiming for today during the talk?;What are we aiming for today during the game?
+426;I'm not quite convinced yet.;Ešte nie som celkom presvedčený.;I'm not quite convinced yet by this.;The boss is not quite convinced yet by the data.;I'm not quite convinced yet by your story.
+427;Let's look at the bigger picture.;Pozrime sa na širší obraz.;Let's look at the bigger picture now.;We should look at the bigger picture sometimes.;Let's look at the bigger picture and wait.
+428;I'll sleep on it and decide.;Vyspím sa na to a rozhodnem sa.;I'll sleep on it and decide tomorrow.;She will sleep on it and decide on Monday.;I'll sleep on it and decide what to do.
+429;What's the bottom line here?;Čo je tu podstatou veci?;What's the bottom line here for us?;The bottom line here is that we are losing money.;What's the bottom line here for the company?
+430;I'm struggling to understand this part.;Mám problém pochopiť túto časť.;I'm struggling to understand this part clearly.;I'm struggling to understand this part of the law.;I'm struggling to understand this part of the map.
+431;It's better to be safe than sorry.;Istota je guľomet.;It's better to be safe than sorry later.;He wears a helmet because it's better to be safe.;It's better to be safe than sorry, so wear it.
+432;I'll make sure it gets done.;Dám pozor, aby sa to urobilo.;I'll make sure it gets done on time.;She will make sure it gets done by Friday.;I'll make sure it gets done by tomorrow.
+433;What do you suggest we do next?;Čo navrhujete, aby sme robili ďalej?;What do you suggest we do next week?;What do you suggest we do next with the house?;What do you suggest we do next with the team?
+434;I'm not sure I can pull it off.;Nie som si istý, či to zvládnem.;I'm not sure I can pull it off.;Do you think he can pull it off alone?;He is very talented and can pull it off.
+435;Let's get down to business.;Poďme na vec (k biznisu).;Let's get down to business right away.;Stop talking and let's get down to business.;Let's get down to business and start working.
+436;I'll keep you in the loop.;Budem vás priebežne informovať.;I'll keep you in the loop daily.;Please keep me in the loop regarding the sale.;I'll keep you in the loop about the project.
+437;What's the status of the project?;V akom stave je projekt?;What's the status of the project now?;What's the status of the project in London?;What's the status of the project in New York?
+438;I'm running out of patience.;Dochádza mi trpezlivosť.;I'm running out of patience with him.;He is running out of patience with the kids.;She is running out of patience with the dog.
+439;It's a long shot but possible.;Je to malá šanca, ale možná.;It's a long shot but possible to win.;Winning the game is a long shot for us.;It's a long shot but I'll try to win.
+440;I'll stand my ground on this.;Budem si v tomto stáť za svojím.;I'll stand my ground on this issue.;I will stand my ground on this principle.;I'll stand my ground on this no matter what.
+441;What's the deal with the delay?;Čo je s tým meškaním?;What's the deal with the delay today?;What's the deal with the delay in production?;What's the deal with the delay at the airport?
+442;I'm not up for it today.;Dnes na to nemám chuť.;I'm not up for it today unfortunately.;I'm not up for it today, maybe tomorrow.;I'm not up for it today, I'm too tired.
+443;It's time to move forward.;Je čas pohnúť sa vpred.;It's time to move forward with plans.;It's time to move forward and forget the past.;It's time to move forward and start a new life.
+444;I'll bear that in mind.;Budem na to pamätať.;I'll bear that in mind for later.;I'll bear that in mind during the interview.;I'll bear that in mind for the future.
+445;What's the catch in this offer?;V čom je háčik tejto ponuky?;What's the catch in this offer exactly?;It seems perfect, so what's the catch?;What's the catch in this amazing offer?
+446;I'm not going to lie to you.;Nebudem vám klamať.;I'm not going to lie to you anymore.;I'm not going to lie to you about the cost.;I'm not going to lie to you, it's difficult.
+447;It's worth a try anyway.;Aj tak to stojí za pokus.;It's worth a try anyway for us.;It's worth a try anyway, even if we fail.;It's worth a try anyway, we have nothing to lose.
+448;I'll take it from here.;Odtiaľto to preberiem ja.;I'll take it from here don't worry.;He said he'll take it from here.;I'll take it from here, you can go home.
+449;What's your take on the market?;Aký je váš názor na trh?;What's your take on the market trends?;What's your take on the market growth?;What's your take on the market prices?
+450;I'm not in the mood for jokes.;Nemám náladu na vtipy.;I'm not in the mood for jokes now.;I'm not in the mood for jokes right now.;I'm not in the mood for jokes after work.
+451;It's a tough pill to swallow.;Je to horká pilulka na prehltnutie.;It's a tough pill to swallow for them.;Losing his job was a tough pill to swallow.;The news was a tough pill to swallow for us.
+452;I'll give you a heads-up later.;Neskôr vám dám vedieť vopred.;I'll give you a heads-up later today.;Give me a heads-up later when you're ready.;Give me a heads-up later before you leave.
+453;What's the scope of the project?;Aký je rozsah projektu?;What's the scope of the project scope?;What's the scope of the project for next year?;What's the scope of the project for this month?
+454;I'm not sure what you're after.;Nie som si istý, o čo vám ide.;I'm not sure what you're after here.;I'm not sure what you're after in this deal.;I'm not sure what you're after in this office.
+455;It's a blessing in disguise.;Je to nešťastie, ktoré prinieslo šťastie.;It's a blessing in disguise for me.;Losing that job was a blessing in disguise.;Being fired was a blessing in disguise for him.
+456;I'll do whatever it takes.;Urobím čokoľvek, čo bude treba.;I'll do whatever it takes to win.;He will do whatever it takes to support them.;I'll do whatever it takes to finish this.
+457;What's the main takeaway here?;Čo je tu hlavným záverom?;What's the main takeaway here for all?;What's the main takeaway here from the book?;What's the main takeaway here for the students?
+458;I'm not sure I can make it.;Nie som si istý, či to stihnem.;I'm not sure I can make it tonight.;I'm not sure I can make it to your wedding.;I'm not sure I can make it to the party.
+459;It's a race against time.;Sú to preteky s časom.;It's a race against time for the team.;It's a race against time to save the forest.;It's a race against time to finish the work.
+460;I'll make it up to you.;Vynahradím vám to.;I'll make it up to you tomorrow.;I'm sorry I'm late, I'll make it up to you.;I'll make it up to you next weekend.
+461;What's the point of this meeting?;Aký je zmysel tohto stretnutia?;What's the point of this meeting anyway?;What's the point of this meeting if he's away?;What's the point of this meeting if no one talks?
+462;I'm not sure where to start.;Nie som si istý, kde začať.;I'm not sure where to start the work.;I'm not sure where to start with the cleaning.;I'm not sure where to start with this mess.
+463;It's not my cup of tea.;To nie je moja šálka kávy.;It's not my cup of tea at all.;Football is not really my cup of tea.;Going to museums is not my cup of tea.
+464;I'll give you the benefit of the doubt.;Dám vám výhodu pochybnosti.;I'll give you the benefit of the doubt.;I don't believe him, but I'll give him the benefit.;I'll give you the benefit of the doubt for now.
+465;What's the best case scenario?;Aký je najlepší možný scenár?;What's the best case scenario for us?;What's the best case scenario for the flight?;What's the best case scenario for the weather?
+466;I'm not sure how to put this.;Nie som si istý, ako to povedať.;I'm not sure how to put this nicely.;I'm not sure how to put this without hurting you.;I'm not sure how to put this to the boss.
+467;It's a walk in the park.;Je to prechádzka ružovým sadom.;It's a walk in the park for him.;The exam was a walk in the park for her.;Building the shelf was a walk in the park.
+468;I'll take that as a compliment.;Budem to brať ako kompliment.;I'll take that as a compliment thanks.;I'll take that as a compliment coming from you.;I'll take that as a compliment, thank you.
+469;What's the holdup on your side?;Kde to viazne na vašej strane?;What's the holdup on your side today?;What's the holdup on your side of the contract?;What's the holdup on your side of the project?
+470;I'm not really into this idea.;Tento nápad sa mi veľmi nepozdáva.;I'm not really into this idea at all.;I'm not really into this idea of moving out.;I'm not really into this idea of traveling.
+471;It's a whole new ball game.;Je to úplne nová situácia.;It's a whole new ball game now.;With this new tech, it's a whole new ball game.;It's a whole new ball game with the new boss.
+472;I'll leave it up to you.;Nechám to na vás.;I'll leave it up to you to decide.;I'll leave it up to you to pick the restaurant.;I'll leave it up to you to choose the color.
+473;What's the story behind this?;Aký príbeh je za týmto?;What's the story behind this new building?;What's the story behind this old photo?;What's the story behind this old watch?
+474;I'm not sure I can handle it.;Nie som si istý, či to zvládnem.;I'm not sure I can handle it alone.;I'm not sure I can handle it without help.;I'm not sure I can handle it without you.
+475;It's a far cry from before.;To je na hony vzdialené od toho, čo bolo.;It's a far cry from before the war.;The new version is a far cry from before.;This result is a far cry from before.
+476;I'll keep my fingers crossed.;Budem držať palce.;I'll keep my fingers crossed for you.;I'll keep my fingers crossed for your exam.;I'll keep my fingers crossed for your surgery.
+477;What's the secret to your success?;Čo je tajomstvom vášho úspechu?;What's the secret to your success here?;What's the secret to your success in business?;What's the secret to your success in life?
+478;I'm not sure I'm following you.;Nie som si istý, či vás sledujem.;I'm not sure I'm following you exactly.;I'm not sure I'm following you correctly.;I'm not sure I'm following you anymore.
+479;It's a small world isn't it?;Svet je malý, však?;It's a small world isn't it really?;It's a small world isn't it, seeing you here?;It's a small world isn't it, meeting here?
+480;I'll play it by ear today.;Dnes to nechám na náhodu (podľa situácie).;I'll play it by ear today for lunch.;We don't have a plan, so let's play it by ear.;We don't have a map, so let's play it by ear.
+481;What's the occasion for the party?;Pri akej príležitosti je tá párty?;What's the occasion for the party tonight?;What's the occasion for the party on Saturday?;What's the occasion for the party tonight?
+482;I'm not sure I can go.;Nie som si istý, či môžem ísť.;I'm not sure I can go with you.;I'm not sure I can go to the cinema tonight.;I'm not sure I can go with you to London.
+483;It's a no-brainer for us.;To je jasná vec (nepremišľanie).;It's a no-brainer for us to accept.;Deciding to go was a no-brainer for me.;Accepting the job was a no-brainer for her.
+484;I'll give it my best shot.;Dám do toho všetko.;I'll give it my best shot tonight.;I'll give it my best shot at the competition.;I'll give it my best shot at the interview.
+485;What's the motive behind the move?;Aký je motív za týmto krokom?;What's the motive behind the move now?;What's the motive behind the move to Asia?;What's the motive behind the move to London?
+486;I'm not sure I can help.;Nie som si istý, či môžem pomôcť.;I'm not sure I can help you.;I'm not sure I can help with the car.;I'm not sure I can help with the kids.
+487;It's a drop in the ocean.;Je to kvapka v mori.;It's a drop in the ocean for them.;Our contribution is just a drop in the ocean.;A hundred dollars is just a drop in the ocean.
+488;I'll check my schedule first.;Najprv si skontrolujem rozvrh.;I'll check my schedule first before saying.;I'll check my schedule first then I'll call.;I'll check my schedule first before we meet.
+489;What's the rush with the report?;Prečo ten zhon s tou správou?;What's the rush with the report today?;What's the rush with the report all of a sudden?;What's the rush with the report today?
+490;I'm not sure I'm ready yet.;Nie som si istý, či som už pripravený.;I'm not sure I'm ready yet to leave.;I'm not sure I'm ready yet for the test.;I'm not sure I'm ready yet for the wedding.
+491;It's a double-edged sword.;Je to dvojsečná zbraň.;It's a double-edged sword for the firm.;This fame is a double-edged sword for her.;This phone is a double-edged sword for me.
+492;I'll back you up on this.;V tomto vás podporím (podržím).;I'll back you up on this decision.;I'll back you up on this if they ask.;I'll back you up on this at the meeting.
+493;What's the outcome of the talk?;Aký je výsledok rozhovoru?;What's the outcome of the talk yesterday?;What's the outcome of the talk with the bank?;What's the outcome of the talk with the doctor?
+494;I'm not sure I've heard that.;Nie som si istý, či som to počul.;I'm not sure I've heard that before.;I'm not sure I've heard that song before.;I'm not sure I've heard that name before.
+495;It's a bit of a stretch.;Je to trochu prehnané.;It's a bit of a stretch to say that.;It's a bit of a stretch to call it a palace.;It's a bit of a stretch to call him a hero.
+496;I'll let it slide this time.;Tentokrát to nechám tak.;I'll let it slide this time only.;Don't worry, I'll let it slide this time.;I'll let it slide this time, but be careful.
+497;What's the frequency of the updates?;Aká je frekvencia aktualizácií?;What's the frequency of the updates here?;What's the frequency of the updates on the app?;What's the frequency of the updates on the site?
+498;I'm not sure I agree with you.;Nie som si istý, či s vami súhlasím.;I'm not sure I agree with you.;I'm not sure I agree with you on this topic.;I'm not sure I agree with you about that.
+499;It's a piece of the puzzle.;Je to kúsok skladačky.;It's a piece of the puzzle here.;Every bit of info is a piece of the puzzle.;Every person is a piece of the puzzle.
+500;I'll keep an eye on it.;Dám na to pozor (budem to sledovať).;I'll keep an eye on it for you.;I'll keep an eye on it while you are away.;I'll keep an eye on it for you, don't worry.
+501;How did you come to that conclusion?;Ako ste dospeli k tomuto záveru?;How did you come to that conclusion about him?;I'd love to hear your thoughts on the matter.;Tell me how you came to that conclusion about the car.
+502;I'd like to point out a potential risk.;Rád by som upozornil na potenciálne riziko.;I'd like to point out a potential risk here.;What is your perspective on the current situation?;I'd like to point out a potential risk for the kids.
+503;Could you clarify what you mean by that?;Mohli by ste objasniť, čo tým myslíte?;Could you clarify what you mean by that word?;He asked me to elaborate on the new rules.;Could you clarify what you mean by that sentence?
+504;Does this meeting have a specific agenda?;Má toto stretnutie konkrétny program?;Does this meeting have a specific agenda today?;If anyone has any objections, please speak now.;Does this meeting have a specific agenda for today?
+505;What's the best way to approach this person?;Aký je najlepší spôsob, ako osloviť túto osobu?;What's the best way to approach this person now?;We don't understand the reasoning behind this move.;What's the best way to approach this person at home?
+506;I'm not sure if I follow your argument.;Nie som si istý, či rozumiem vašej argumentácii.;I'm not sure if I follow your argument yet.;Tell me if I'm not following the instructions.;I am not sure if I follow your argument right now.
+507;Let's look at the situation from a different perspective.;Pozrime sa na situáciu z inej perspektívy.;Let's look at the situation from a different perspective.;Let me put it another way so you understand.;Let's look at the situation from a different perspective.
+508;How does this impact our long-term goals?;Ako to ovplyvňuje naše dlhodobé ciele?;How does this impact our long-term goals overall?;This change won't affect our timeline much.;How does this impact our long-term goals for life?
+509;Is there any room for negotiation on this?;Je v tejto veci nejaký priestor na vyjednávanie?;Is there any room for negotiation on this price?;There is always room for improvement in our work.;Is there any room for negotiation on this deal?
+510;What would you recommend in this scenario?;Čo by ste v tomto scenári odporučili?;What would you recommend in this scenario for us?;I would be very careful in your shoes.;What would you recommend in this scenario for me?
+511;I'm curious to hear your thoughts on this.;Zaujíma ma váš názor na túto vec.;I'm curious to hear your thoughts on this idea.;I'm curious to know your opinion on the car.;I am curious to hear your thoughts on this movie.
+512;Can we find a solution that works for everyone?;Môžeme nájsť riešenie, ktoré vyhovuje každému?;Can we find a solution that works for everyone?;It is hard to reach a compromise with them.;Can we find a solution that works for everyone today?
+513;I'd like to draw your attention to this detail.;Rád by som upriamil vašu pozornosť na tento detail.;I'd like to draw your attention to this detail.;She wanted to point out one thing about the plan.;I'd like to draw your attention to this detail here.
+514;What's the most likely outcome of our actions?;Aký je najpravdepodobnejší výsledok našich činov?;What's the most likely outcome of our actions?;We must prepare for the worst-case scenario.;What is the most likely outcome of our actions now?
+515;I'll get to the bottom of the problem.;Prídem na koreň problému.;I'll get to the bottom of the problem today.;If you need the report, I'll get right on it.;I'll get to the bottom of the problem for you.
+516;It's just a matter of opinion at this stage.;V tejto fáze je to len otázka názoru.;It's just a matter of opinion at this stage.;It's just a matter of time before they find out.;It's just a matter of opinion at this stage for them.
+517;I'm not in a position to give a definite answer.;Nie som v pozícii, aby som dal definitívnu odpoveď.;I'm not in a position to give a definite answer.;I'm not in a position to say who won.;I'm not in a position to give a definite answer now.
+518;That's exactly what I wanted to talk about.;To je presne to, o čom som chcel hovoriť.;That's exactly what I wanted to talk about now.;That's exactly what I was thinking yesterday.;That's exactly what I wanted to talk about today.
+519;I'm afraid I have to disagree with you.;Obávam sa, že s vami musím nesúhlasiť.;I'm afraid I have to disagree with you there.;I'm afraid I don't see it that way at all.;I am afraid I have to disagree with you this time.
+520;Could you give me a rough estimate of the cost?;Mohli by ste mi dať približný odhad nákladov?;Could you give me a rough estimate of the cost?;We need some context before we start.;Could you give me a rough estimate of the cost soon?
+521;How do you plan to handle the upcoming changes?;Ako plánujete zvládnuť nadchádzajúce zmeny?;How do you plan to handle the upcoming changes?;She doesn't know how to handle this pressure.;How do you plan to handle the upcoming changes here?
+522;I'd like to hear more about your experience.;Rád by som počul viac o vašich skúsenostiach.;I'd like to hear more about your experience there.;Let's explore other options before we buy it.;I'd like to hear more about your experience at school.
+523;It's on the tip of my tongue but I can't remember.;Mám to na jazyku, ale neviem si spomenúť.;It's on the tip of my tongue but I forgot.;Wait, the name is on the tip of my tongue.;Wait, her name is on the tip of my tongue.
+524;I'll take your word for it this time.;Tentokrát vám budem veriť.;I'll take your word for it this time only.;He is honest, so I'll take his word for it.;He never lies, so I'll take his word for it.
+525;What are we trying to achieve by doing this?;Čo sa týmto snažíme dosiahnuť?;What are we trying to achieve by doing this?;What are we aiming for today during the talk?;What are we trying to achieve by doing this for her?
+526;I'm not entirely convinced that this is right.;Nie som úplne presvedčený, že je to správne.;I'm not entirely convinced that this is right.;The boss is not quite convinced yet by the data.;I'm not entirely convinced that this is right today.
+527;Let's take a closer look at the data.;Pozrime sa bližšie na údaje.;Let's take a closer look at the data now.;We should look at the bigger picture sometimes.;Let's take a closer look at the data from the bank.
+528;I'll give you an answer as soon as possible.;Dám vám odpoveď hneď, ako to bude možné.;I'll give you an answer as soon as possible.;She will sleep on it and decide on Monday.;I'll give you an answer as soon as possible, I swear.
+529;What's the main obstacle we are facing today?;Aká je hlavná prekážka, ktorej dnes čelíme?;What's the main obstacle we are facing today?;The bottom line here is that we are losing money.;What's the main obstacle we are facing today at work?
+530;I'm having trouble seeing how these two are linked.;Mám problém vidieť, ako sú tieto dve veci prepojené.;I'm having trouble seeing how these two are linked.;I'm struggling to understand this part of the law.;I'm having trouble seeing how these two are linked.
+531;It's better to be safe than sorry in this case.;V tomto prípade je lepšie byť opatrný.;It's better to be safe than sorry in this case.;He wears a helmet because it's better to be safe.;It's better to be safe than sorry in this case for us.
+532;I'll make sure that all the documents are ready.;Zabezpečím, aby boli všetky dokumenty pripravené.;I'll make sure that all the documents are ready.;She will make sure it gets done by Friday.;I'll make sure that all the documents are ready now.
+533;What do you propose we do about this issue?;Čo navrhujete urobiť s týmto problémom?;What do you propose we do about this issue?;What do you suggest we do next with the house?;What do you propose we do about this issue tonight?
+534;I'm not sure if we can pull it off without help.;Nie som si istý, či to zvládneme bez pomoci.;I'm not sure if we can pull it off.;Do you think he can pull it off alone?;I'm not sure if we can pull it off without you.
+535;Let's get back to the subject at hand.;Vráťme sa k téme, ktorú riešime.;Let's get back to the subject at hand now.;Stop talking and let's get down to business.;Let's get back to the subject at hand right now.
+536;I'll keep you updated on the progress of the work.;Budem vás informovať o priebehu prác.;I'll keep you updated on the progress of work.;Please keep me in the loop regarding the sale.;I'll keep you updated on the progress of the car.
+537;What's the current status of the negotiation?;Aký je súčasný stav vyjednávania?;What's the current status of the negotiation?;What's the status of the project in London?;What's the current status of the negotiation today?
+538;I'm losing track of what we decided earlier.;Strácam prehľad o tom, čo sme rozhodli predtým.;I'm losing track of what we decided earlier today.;He is running out of patience with the kids.;I'm losing track of what we decided earlier at home.
+539;It's a long shot but it might just work.;Je to malá šanca, ale mohlo by to fungovať.;It's a long shot but it might just work.;Winning the game is a long shot for us.;It's a long shot but it might just work for me.
+540;I'll stick to my original decision on this.;Budem sa držať svojho pôvodného rozhodnutia.;I'll stick to my original decision on this matter.;I will stand my ground on this principle.;I'll stick to my original decision on this topic.
+541;What's the deal with the new company policy?;O čom sú tie nové firemné pravidlá?;What's the deal with the new company policy?;What's the deal with the delay in production?;What's the deal with the new company policy today?
+542;I'm not up for a long meeting today.;Dnes nemám náladu na dlhé stretnutie.;I'm not up for a long meeting today at all.;I'm not up for it today, maybe tomorrow.;I'm not up for a long meeting today, I'm too busy.
+543;It's time to take action before it's too late.;Je čas konať, kým nebude neskoro.;It's time to take action before it's too late.;It's time to move forward and forget the past.;It's time to take action before it's too late now.
+544;I'll keep that in mind for future projects.;Budem na to pamätať pri budúcich projektoch.;I'll keep that in mind for future projects.;I'll bear that in mind during the interview.;I'll keep that in mind for future projects for her.
+545;What's the catch in this deal they offered?;V čom je háčik v tej dohode, ktorú ponúkli?;What's the catch in this deal they offered us?;It seems perfect, so what's the catch?;What's the catch in this deal they offered today?
+546;I'm not going to lie to you about the risks.;Nebudem vám klamať o rizikách.;I'm not going to lie to you about the risks.;I'm not going to lie to you about the cost.;I'm not going to lie to you about the risks now.
+547;It's worth considering every option we have.;Stojí za to zvážiť každú možnosť, ktorú máme.;It's worth considering every option we have now.;It's worth a try anyway, even if we fail.;It's worth considering every option we have tonight.
+548;I'll take it from here so you can go home.;Odtiaľto to preberiem ja, takže môžete ísť domov.;I'll take it from here so you can go.;He said he'll take it from here.;I'll take it from here so you can go to sleep.
+549;What's your assessment of the current market?;Aké je vaše posúdenie súčasného trhu?;What's your assessment of the current market here?;What's your take on the market growth?;What's your assessment of the current market today?
+550;I'm not in the mood for jokes right now.;Teraz nemám náladu na vtipy.;I'm not in the mood for jokes right now.;I'm not in the mood for jokes right now.;I'm not in the mood for jokes right now, really.
+551;It's a hard pill to swallow but we lost.;Je to horká pilulka, ale prehrali sme.;It's a hard pill to swallow but we lost.;Losing his job was a tough pill to swallow.;The defeat was a hard pill to swallow for the team.
+552;I'll give you a heads-up before the event starts.;Dám vám vedieť predtým, než sa podujatie začne.;I'll give you a heads-up before the event starts.;Give me a heads-up later when you're ready.;I'll give you a heads-up before the event starts now.
+553;What's the overall scope of the work needed?;Aký je celkový rozsah potrebných prác?;What's the overall scope of the work needed?;What's the scope of the project for next year?;What's the overall scope of the work needed for us?
+554;I'm not sure I understand what you are implying.;Nie som si istý, či rozumiem, čo naznačujete.;I'm not sure I understand what you are implying.;I'm not sure what you're after in this deal.;I'm not sure I understand what you are implying.
+555;It's a blessing in disguise that we didn't go.;Je to šťastie v nešťastí, že sme nešli.;It's a blessing in disguise that we didn't go.;Losing that job was a blessing in disguise.;It's a blessing in disguise that we didn't go out.
+556;I'll do my best to complete it on schedule.;Urobím maximum, aby som to dokončil podľa plánu.;I'll do my best to complete it on schedule.;He will do whatever it takes to support them.;I'll do my best to complete it on schedule today.
+557;What's the key message we want to send?;Aké kľúčové posolstvo chceme vyslať?;What's the key message we want to send out?;What's the main takeaway here from the book?;What's the key message we want to send to her?
+558;I'm not sure I can fit another task in today.;Nie som si istý, či dnes stihnem ďalšiu úlohu.;I'm not sure I can fit another task in.;I'm not sure I can make it to your wedding.;I'm not sure I can fit another task in my bag.
+559;It's a race against time to meet the deadline.;Sú to preteky s časom, aby sme stihli termín.;It's a race against time to meet the deadline.;It's a race against time to save the forest.;It's a race against time to meet the deadline now.
+560;I'll make up for the delay next week.;Vynahradím to meškanie budúci týždeň.;I'll make up for the delay next week surely.;I'm sorry I'm late, I'll make it up to you.;I'll make up for the delay next week for sure.
+561;What's the point of starting if we can't finish?;Aký má zmysel začínať, ak to nemôžeme dokončiť?;What's the point of starting if we can't finish?;What's the point of this meeting if he's away?;What's the point of starting if we can't finish?
+562;I'm not sure where to draw the line here.;Nie som si istý, kde tu urobiť hrubú čiaru.;I'm not sure where to draw the line here.;I'm not sure where to start with the cleaning.;I'm not sure where to draw the line here for him.
+563;It's not really my area of expertise to decide.;Rozhodnúť o tom nie je celkom moja parketa.;It's not really my area of expertise to decide.;Football is not really my cup of tea.;It's not really my area of expertise to decide.
+564;I'll give you a definite answer tomorrow morning.;Definitívnu odpoveď vám dám zajtra ráno.;I'll give you a definite answer tomorrow morning.;I don't believe him, but I'll give him the benefit.;I'll give you a definite answer tomorrow morning.
+565;What's the best way to handle this customer?;Aký je najlepší spôsob, ako riešiť tohto zákazníka?;What's the best way to handle this customer?;What's the best case scenario for the flight?;What's the best way to handle this customer today?
+566;I'm not sure how to put this into words.;Nie som si istý, ako to vyjadriť slovami.;I'm not sure how to put this into words.;I'm not sure how to put this without hurting you.;I'm not sure how to put this into words for them.
+567;It's a walk in the park compared to last time.;V porovnaní s minulým razom je to hračka.;It's a walk in the park compared to last year.;The exam was a walk in the park for her.;It's a walk in the park compared to last week.
+568;I'll take that as a sign that we are winning.;Budem to brať ako znamenie, že vyhrávame.;I'll take that as a sign that we are winning.;I'll take that as a compliment coming from you.;I'll take that as a sign that we are winning.
+569;What's the holdup with the approval of the plan?;Kde to viazne so schválením plánu?;What's the holdup with the approval of the plan?;What's the holdup on your side of the contract?;What's the holdup with the approval of the plan?
+570;I'm not particularly fond of this new idea.;Tento nový nápad sa mi veľmi nepozdáva.;I'm not particularly fond of this new idea.;I'm not really into this idea of moving out.;I'm not particularly fond of this new idea for us.
+571;It's a whole new ball game with the new boss.;S novým šéfom je to úplne iná káva.;It's a whole new ball game with the new boss.;With this new tech, it's a whole new ball game.;It's a whole new ball game today with the boss.
+572;I'll leave the final choice to you.;Konečný výber nechám na vás.;I'll leave the final choice to you and him.;I'll leave it up to you to pick the restaurant.;I'll leave the final choice to you and your wife.
+573;What's the background of this misunderstanding?;Aké je pozadie tohto nedorozumenia?;What's the background of this misunderstanding today?;What's the story behind this old photo?;What's the background of this misunderstanding?
+574;I'm not sure I can cope with this much work.;Nie som si istý, či zvládnem toľko práce.;I'm not sure I can cope with this work.;I'm not sure I can handle it without help.;I'm not sure I can cope with this much work.
+575;It's a far cry from the original proposal.;Je to na hony vzdialené od pôvodného návrhu.;It's a far cry from the original proposal.;The new version is a far cry from before.;It's a far cry from the original proposal for her.
+576;I'll keep my fingers crossed for your interview.;Budem vám držať palce na pohovore.;I'll keep my fingers crossed for your interview.;I'll keep my fingers crossed for your exam.;I'll keep my fingers crossed for your interview.
+577;What's the secret to your success in the field?;Čo je tajomstvom vášho úspechu v odbore?;What's the secret to your success in the field?;What's the secret to your success in business?;What's the secret to your success in the field?
+578;I'm not sure I'm following your line of reasoning.;Nie som si istý, či chápem vašu logiku.;I'm not sure I'm following your line of reasoning.;I am not sure I am following you correctly.;I'm not sure I'm following your line of reasoning.
+579;It's a small world since we met here.;Svet je malý, keďže sme sa tu stretli.;It's a small world since we met here today.;It's a small world isn't it, seeing you here?;It's a small world since we met here today.
+580;I'll play it by ear and see what happens.;Zariadim sa podľa situácie a uvidím.;I'll play it by ear and see what happens.;We don't have a plan, so let's play it by ear.;I'll play it by ear and see what happens now.
+581;What's the occasion for this sudden meeting?;Čo je dôvodom tohto náhleho stretnutia?;What's the occasion for this sudden meeting now?;What's the occasion for the party on Saturday?;What's the occasion for this sudden meeting today?
+582;I'm not sure I can attend the party tonight.;Nie som si istý, či môžem ísť dnes na párty.;I'm not sure I can attend the party tonight.;I'm not sure I can go to the cinema tonight.;I'm not sure I can attend the party tonight.
+583;It's a no-brainer to invest in this project.;Investovať do tohto projektu je jasná voľba.;It's a no-brainer to invest in this project.;Deciding to go was a no-brainer for me.;It's a no-brainer to invest in this project.
+584;I'll give it my best shot no matter what.;Dám do toho maximum, nech sa deje čokoľvek.;I'll give it my best shot no matter what.;I'll give it my best shot at the competition.;I'll give it my best shot no matter what happens.
+585;What's the motive for their sudden departure?;Aký je motív ich náhleho odchodu?;What's the motive for their sudden departure then?;What's the motive behind the move to Asia?;What's the motive for their sudden departure then?
+586;I'm not sure I can be of much help.;Nie som si istý, či môžem byť veľmi nápomocný.;I'm not sure I can be of much help.;I'm not sure I can help with the car.;I'm not sure I can be of much help to you.
+587;It's a drop in the ocean compared to the debt.;V porovnaní s dlhom je to len kvapka v mori.;It's a drop in the ocean compared to the debt.;Our contribution is just a drop in the ocean.;It's a drop in the ocean compared to the debt.
+588;I'll consult my colleagues before I say anything.;Najprv sa poradím s kolegami.;I'll consult my colleagues before I say anything.;I'll check my schedule first then I'll call.;I'll consult my colleagues before I say anything.
+589;What's the rush to get this done today?;Prečo ten zhon, aby sa to urobilo dnes?;What's the rush to get this done today?;What's the rush with the report all of a sudden?;What's the rush to get this done today instead?
+590;I'm not sure I'm fully prepared for this.;Nie som si istý, či som na toto plne pripravený.;I'm not sure I'm fully prepared for this.;I'm not sure I'm ready yet for the test.;I'm not sure I'm fully prepared for this trip.
+591;It's a double-edged sword for the company.;Pre firmu je to dvojsečná zbraň.;It's a double-edged sword for the company now.;This fame is a double-edged sword for her.;It's a double-edged sword for the company now.
+592;I'll back you up if anyone questions you.;Podporím vás, ak by vás niekto spochybňoval.;I'll back you up if anyone questions you later.;I'll back you up on this if they ask.;I'll back you up if anyone questions you later.
+593;What's the final outcome of the discussion?;Aký je konečný výsledok diskusie?;What's the final outcome of the discussion today?;What's the outcome of the talk with the bank?;What's the final outcome of the discussion today?
+594;I'm not sure I've come across this before.;Nie som si istý, či som na toto už narazil.;I'm not sure I've come across this before.;I'm not sure I've heard that song before.;I'm not sure I've come across this before.
+595;It's a bit of a stretch to call it perfect.;Nazvať to dokonalým je trochu prehnané.;It's a bit of a stretch to call it perfect.;It's a bit of a stretch to call it a palace.;It's a bit of a stretch to call it perfect.
+596;I'll let it slide this time but don't repeat it.;Tentokrát to nechám tak, ale neopakujte to.;I'll let it slide this time but don't repeat.;Don't worry, I'll let it slide this time.;I'll let it slide this time but don't repeat.
+597;What's the frequency of these reports?;Aká je frekvencia týchto správ?;What's the frequency of these reports in the office?;What's the frequency of the updates on the app?;What's the frequency of these reports in the office?
+598;I'm not sure I see your point here.;Nie som si istý, či chápem váš bod.;I'm not sure I see your point here.;I'm not sure I agree with you on this topic.;I'm not sure I see your point here.
+599;It's a crucial piece of the puzzle.;Je to kľúčový kúsok skladačky.;It's a crucial piece of the puzzle for us.;Every bit of info is a piece of the puzzle.;It's a crucial piece of the puzzle for us.
+600;I'll keep a close eye on the development.;Budem pozorne sledovať vývoj.;I'll keep a close eye on the development.;I'll keep an eye on it while you are away.;I'll keep a close eye on the development today.
+601;;;;;
+602;;;;;
+603;;;;;
+604;;;;;
+605;;;;;
+606;;;;;
+607;;;;;
+608;;;;;
+609;;;;;
