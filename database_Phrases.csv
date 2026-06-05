@@ -599,12 +599,644 @@ id;phrase_en;phrase_sk;example_1;example_2;example_3
 598;I'm not sure I see your point here.;Nie som si istý, či chápem váš bod.;I'm not sure I see your point here.;I'm not sure I agree with you on this topic.;I'm not sure I see your point here.
 599;It's a crucial piece of the puzzle.;Je to kľúčový kúsok skladačky.;It's a crucial piece of the puzzle for us.;Every bit of info is a piece of the puzzle.;It's a crucial piece of the puzzle for us.
 600;I'll keep a close eye on the development.;Budem pozorne sledovať vývoj.;I'll keep a close eye on the development.;I'll keep an eye on it while you are away.;I'll keep a close eye on the development today.
-601;;;;;
-602;;;;;
-603;;;;;
-604;;;;;
-605;;;;;
-606;;;;;
-607;;;;;
-608;;;;;
-609;;;;;
+601;It stands to reason that this is the best approach.;Je logické, že toto je najlepší prístup.;It stands to reason that this is the best approach.;We chose it because it stands to reason that this is the best approach.;Since it stands to reason that this is the best approach, let's proceed.
+602;As far as I’m concerned, the decision is final.;Pokiaľ ide o mňa, rozhodnutie je konečné.;As far as I’m concerned, the decision is final.;I don't need further discussion, as far as I’m concerned, the decision is final.;You can appeal, but as far as I’m concerned, the decision is final.
+603;There is no denying that she is highly skilled.;Nedá sa poprieť, že je vysoko kvalifikovaná.;There is no denying that she is highly skilled.;Everyone agrees there is no denying that she is highly skilled.;After seeing her work, there is no denying that she is highly skilled.
+604;It is common knowledge that interest rates are rising.;Je všeobecne známe, že úrokové sadzby rastú.;It is common knowledge that interest rates are rising.;In the financial sector, it is common knowledge that interest rates are rising.;Don't be surprised, it is common knowledge that interest rates are rising.
+605;I’m under no illusion that this will be easy.;Nerobím si ilúzie, že to bude ľahké.;I’m under no illusion that this will be easy.;We started the project, but I’m under no illusion that this will be easy.;Prepare yourself, I’m under no illusion that this will be easy.
+606;It comes as no surprise that the sales are up.;Neprekvapuje ma, že predaje stúpli.;It comes as no surprise that the sales are up.;After such a great campaign, it comes as no surprise that the sales are up.;"Look at the numbers; it comes as no surprise that the sales are up."
+607;I have a clear grasp of what needs to be done.;Mám jasnú predstavu o tom, čo treba urobiť.;I have a clear grasp of what needs to be done.;Give me a moment, I have a clear grasp of what needs to be done.;The team relies on me because I have a clear grasp of what needs to be done.
+608;A positive attitude makes all the difference.;Pozitívny prístup robí obrovský rozdiel.;A positive attitude makes all the difference.;In any difficult situation, a positive attitude makes all the difference.;I believe that a positive attitude makes all the difference.
+609;I’m keeping my options open regarding my career.;Nechávam si otvorené zadné vrátka ohľadom mojej kariéry.;I’m keeping my options open regarding my career.;I haven't accepted the offer because I’m keeping my options open regarding my career.;It's smart to be flexible and keep my options open regarding my career.
+610;That’s beside the point, we need to focus on costs.;To je mimo témy, musíme sa sústrediť na náklady.;That’s beside the point, we need to focus on costs.;Stop talking about the color, that’s beside the point, we need to focus on costs.;I understand your frustration, but that’s beside the point, we need to focus on costs.
+611;I take it for granted that you know the rules.;Beriem ako samozrejmosť, že poznáš pravidlá.;I take it for granted that you know the rules.;Since you have been here for years, I take it for granted that you know the rules.;Please don't ignore them, I take it for granted that you know the rules.
+612;It is beyond my comprehension why they left.;To presahuje moje chápanie, prečo odišli.;It is beyond my comprehension why they left.;They were doing well, so it is beyond my comprehension why they left.;It is beyond my comprehension why they left without saying goodbye.
+613;I’m in the process of updating the files.;Práve som v procese aktualizácie súborov.;I’m in the process of updating the files.;Please wait, I’m in the process of updating the files.;The system is slow because I’m in the process of updating the files.
+614;I’m not entirely convinced by his explanation.;Nie som celkom presvedčený o jeho vysvetlení.;I’m not entirely convinced by his explanation.;He tried hard, but I’m not entirely convinced by his explanation.;I still have questions because I’m not entirely convinced by his explanation.
+615;It seems rather unlikely that we will finish today.;Zdá sa to dosť nepravdepodobné, že skončíme dnes.;It seems rather unlikely that we will finish today.;Given the workload, it seems rather unlikely that we will finish today.;Let's be realistic, it seems rather unlikely that we will finish today.
+616;I’ve come to the conclusion that we need help.;Dospel som k záveru, že potrebujeme pomoc.;I’ve come to the conclusion that we need help.;After analyzing the data, I’ve come to the conclusion that we need help.;"I don't see any other way; I’ve come to the conclusion that we need help."
+617;It is worth pointing out that we are ahead of schedule.;Stojí za zmienku, že sme v predstihu.;It is worth pointing out that we are ahead of schedule.;Before we finish, it is worth pointing out that we are ahead of schedule.;It is worth pointing out that we are ahead of schedule despite the delays.
+618;I’m at a loss as to how to fix this error.;Som stratený v tom, ako opraviť túto chybu.;I’m at a loss as to how to fix this error.;Everything I tried failed, I’m at a loss as to how to fix this error.;Can you help me? I’m at a loss as to how to fix this error.
+619;It’s high time we addressed the issue of safety.;Je najvyšší čas, aby sme riešili otázku bezpečnosti.;It’s high time we addressed the issue of safety.;"There have been too many incidents; it’s high time we addressed the issue of safety.";Don't delay it further, it’s high time we addressed the issue of safety.
+620;I’m not in a position to judge their performance.;Nie som v pozícii, aby som súdil ich výkon.;I’m not in a position to judge their performance.;I am just a colleague, so I’m not in a position to judge their performance.;"Please ask the manager; I’m not in a position to judge their performance."
+621;It stands to reason that this is the best approach.;Je logické, že toto je najlepší prístup.;It stands to reason that this is the best approach.;We chose it because it stands to reason that this is the best approach.;Since it stands to reason that this is the best approach, let's proceed.
+622;As far as I’m concerned, the decision is final.;Pokiaľ ide o mňa, rozhodnutie je konečné.;As far as I’m concerned, the decision is final.;I don't need further discussion, as far as I’m concerned, the decision is final.;You can appeal, but as far as I’m concerned, the decision is final.
+623;There is no denying that she is highly skilled.;Nedá sa poprieť, že je vysoko kvalifikovaná.;There is no denying that she is highly skilled.;Everyone agrees there is no denying that she is highly skilled.;After seeing her work, there is no denying that she is highly skilled.
+624;It is common knowledge that interest rates are rising.;Je všeobecne známe, že úrokové sadzby rastú.;It is common knowledge that interest rates are rising.;In the financial sector, it is common knowledge that interest rates are rising.;Don't be surprised, it is common knowledge that interest rates are rising.
+625;I’m under no illusion that this will be easy.;Nerobím si ilúzie, že to bude ľahké.;I’m under no illusion that this will be easy.;We started the project, but I’m under no illusion that this will be easy.;Prepare yourself, I’m under no illusion that this will be easy.
+626;It comes as no surprise that the sales are up.;Neprekvapuje ma, že predaje stúpli.;It comes as no surprise that the sales are up.;After such a great campaign, it comes as no surprise that the sales are up.;"Look at the numbers; it comes as no surprise that the sales are up."
+627;I have a clear grasp of what needs to be done.;Mám jasnú predstavu o tom, čo treba urobiť.;I have a clear grasp of what needs to be done.;Give me a moment, I have a clear grasp of what needs to be done.;The team relies on me because I have a clear grasp of what needs to be done.
+628;A positive attitude makes all the difference.;Pozitívny prístup robí obrovský rozdiel.;A positive attitude makes all the difference.;In any difficult situation, a positive attitude makes all the difference.;I believe that a positive attitude makes all the difference.
+629;I’m keeping my options open regarding my career.;Nechávam si otvorené zadné vrátka ohľadom mojej kariéry.;I’m keeping my options open regarding my career.;I haven't accepted the offer because I’m keeping my options open regarding my career.;It's smart to be flexible and keep my options open regarding my career.
+630;That’s beside the point, we need to focus on costs.;To je mimo témy, musíme sa sústrediť na náklady.;That’s beside the point, we need to focus on costs.;Stop talking about the color, that’s beside the point, we need to focus on costs.;I understand your frustration, but that’s beside the point, we need to focus on costs.
+631;I take it for granted that you know the rules.;Beriem ako samozrejmosť, že poznáš pravidlá.;I take it for granted that you know the rules.;Since you have been here for years, I take it for granted that you know the rules.;Please don't ignore them, I take it for granted that you know the rules.
+632;It is beyond my comprehension why they left.;To presahuje moje chápanie, prečo odišli.;It is beyond my comprehension why they left.;They were doing well, so it is beyond my comprehension why they left.;It is beyond my comprehension why they left without saying goodbye.
+633;I’m in the process of updating the files.;Práve som v procese aktualizácie súborov.;I’m in the process of updating the files.;Please wait, I’m in the process of updating the files.;The system is slow because I’m in the process of updating the files.
+634;I’m not entirely convinced by his explanation.;Nie som celkom presvedčený o jeho vysvetlení.;I’m not entirely convinced by his explanation.;He tried hard, but I’m not entirely convinced by his explanation.;I still have questions because I’m not entirely convinced by his explanation.
+635;It seems rather unlikely that we will finish today.;Zdá sa to dosť nepravdepodobné, že skončíme dnes.;It seems rather unlikely that we will finish today.;Given the workload, it seems rather unlikely that we will finish today.;Let's be realistic, it seems rather unlikely that we will finish today.
+636;I’ve come to the conclusion that we need help.;Dospel som k záveru, že potrebujeme pomoc.;I’ve come to the conclusion that we need help.;After analyzing the data, I’ve come to the conclusion that we need help.;"I don't see any other way; I’ve come to the conclusion that we need help."
+637;It is worth pointing out that we are ahead of schedule.;Stojí za zmienku, že sme v predstihu.;It is worth pointing out that we are ahead of schedule.;Before we finish, it is worth pointing out that we are ahead of schedule.;It is worth pointing out that we are ahead of schedule despite the delays.
+638;I’m at a loss as to how to fix this error.;Som stratený v tom, ako opraviť túto chybu.;I’m at a loss as to how to fix this error.;Everything I tried failed, I’m at a loss as to how to fix this error.;Can you help me? I’m at a loss as to how to fix this error.
+639;It’s high time we addressed the issue of safety.;Je najvyšší čas, aby sme riešili otázku bezpečnosti.;It’s high time we addressed the issue of safety.;"There have been too many incidents; it’s high time we addressed the issue of safety.";Don't delay it further, it’s high time we addressed the issue of safety.
+640;I’m not in a position to judge their performance.;Nie som v pozícii, aby som súdil ich výkon.;I’m not in a position to judge their performance.;I am just a colleague, so I’m not in a position to judge their performance.;"Please ask the manager; I’m not in a position to judge their performance."
+641;It stands to reason that this is the best approach.;Je logické, že toto je najlepší prístup.;It stands to reason that this is the best approach.;We chose it because it stands to reason that this is the best approach.;Since it stands to reason that this is the best approach, let's proceed.
+642;As far as I’m concerned, the decision is final.;Pokiaľ ide o mňa, rozhodnutie je konečné.;As far as I’m concerned, the decision is final.;I don't need further discussion, as far as I’m concerned, the decision is final.;You can appeal, but as far as I’m concerned, the decision is final.
+643;There is no denying that she is highly skilled.;Nedá sa poprieť, že je vysoko kvalifikovaná.;There is no denying that she is highly skilled.;Everyone agrees there is no denying that she is highly skilled.;After seeing her work, there is no denying that she is highly skilled.
+644;It is common knowledge that interest rates are rising.;Je všeobecne známe, že úrokové sadzby rastú.;It is common knowledge that interest rates are rising.;In the financial sector, it is common knowledge that interest rates are rising.;Don't be surprised, it is common knowledge that interest rates are rising.
+645;I’m under no illusion that this will be easy.;Nerobím si ilúzie, že to bude ľahké.;I’m under no illusion that this will be easy.;We started the project, but I’m under no illusion that this will be easy.;Prepare yourself, I’m under no illusion that this will be easy.
+646;It comes as no surprise that the sales are up.;Neprekvapuje ma, že predaje stúpli.;It comes as no surprise that the sales are up.;After such a great campaign, it comes as no surprise that the sales are up.;"Look at the numbers; it comes as no surprise that the sales are up."
+647;I have a clear grasp of what needs to be done.;Mám jasnú predstavu o tom, čo treba urobiť.;I have a clear grasp of what needs to be done.;Give me a moment, I have a clear grasp of what needs to be done.;The team relies on me because I have a clear grasp of what needs to be done.
+648;A positive attitude makes all the difference.;Pozitívny prístup robí obrovský rozdiel.;A positive attitude makes all the difference.;In any difficult situation, a positive attitude makes all the difference.;I believe that a positive attitude makes all the difference.
+649;I’m keeping my options open regarding my career.;Nechávam si otvorené zadné vrátka ohľadom mojej kariéry.;I’m keeping my options open regarding my career.;I haven't accepted the offer because I’m keeping my options open regarding my career.;It's smart to be flexible and keep my options open regarding my career.
+650;That’s beside the point, we need to focus on costs.;To je mimo témy, musíme sa sústrediť na náklady.;That’s beside the point, we need to focus on costs.;Stop talking about the color, that’s beside the point, we need to focus on costs.;I understand your frustration, but that’s beside the point, we need to focus on costs.
+651;I take it for granted that you know the rules.;Beriem ako samozrejmosť, že poznáš pravidlá.;I take it for granted that you know the rules.;Since you have been here for years, I take it for granted that you know the rules.;Please don't ignore them, I take it for granted that you know the rules.
+652;It is beyond my comprehension why they left.;To presahuje moje chápanie, prečo odišli.;It is beyond my comprehension why they left.;They were doing well, so it is beyond my comprehension why they left.;It is beyond my comprehension why they left without saying goodbye.
+653;I’m in the process of updating the files.;Práve som v procese aktualizácie súborov.;I’m in the process of updating the files.;Please wait, I’m in the process of updating the files.;The system is slow because I’m in the process of updating the files.
+654;I’m not entirely convinced by his explanation.;Nie som celkom presvedčený o jeho vysvetlení.;I’m not entirely convinced by his explanation.;He tried hard, but I’m not entirely convinced by his explanation.;I still have questions because I’m not entirely convinced by his explanation.
+655;It seems rather unlikely that we will finish today.;Zdá sa to dosť nepravdepodobné, že skončíme dnes.;It seems rather unlikely that we will finish today.;Given the workload, it seems rather unlikely that we will finish today.;Let's be realistic, it seems rather unlikely that we will finish today.
+656;I’ve come to the conclusion that we need help.;Dospel som k záveru, že potrebujeme pomoc.;I’ve come to the conclusion that we need help.;After analyzing the data, I’ve come to the conclusion that we need help.;"I don't see any other way; I’ve come to the conclusion that we need help."
+657;It is worth pointing out that we are ahead of schedule.;Stojí za zmienku, že sme v predstihu.;It is worth pointing out that we are ahead of schedule.;Before we finish, it is worth pointing out that we are ahead of schedule.;It is worth pointing out that we are ahead of schedule despite the delays.
+658;I’m at a loss as to how to fix this error.;Som stratený v tom, ako opraviť túto chybu.;I’m at a loss as to how to fix this error.;Everything I tried failed, I’m at a loss as to how to fix this error.;Can you help me? I’m at a loss as to how to fix this error.
+659;It’s high time we addressed the issue of safety.;Je najvyšší čas, aby sme riešili otázku bezpečnosti.;It’s high time we addressed the issue of safety.;"There have been too many incidents; it’s high time we addressed the issue of safety.";Don't delay it further, it’s high time we addressed the issue of safety.
+660;I’m not in a position to judge their performance.;Nie som v pozícii, aby som súdil ich výkon.;I’m not in a position to judge their performance.;I am just a colleague, so I’m not in a position to judge their performance.;"Please ask the manager; I’m not in a position to judge their performance."
+661;It stands to reason that this is the best approach.;Je logické, že toto je najlepší prístup.;It stands to reason that this is the best approach.;We chose it because it stands to reason that this is the best approach.;Since it stands to reason that this is the best approach, let's proceed.
+662;As far as I’m concerned, the decision is final.;Pokiaľ ide o mňa, rozhodnutie je konečné.;As far as I’m concerned, the decision is final.;I don't need further discussion, as far as I’m concerned, the decision is final.;You can appeal, but as far as I’m concerned, the decision is final.
+663;There is no denying that she is highly skilled.;Nedá sa poprieť, že je vysoko kvalifikovaná.;There is no denying that she is highly skilled.;Everyone agrees there is no denying that she is highly skilled.;After seeing her work, there is no denying that she is highly skilled.
+664;It is common knowledge that interest rates are rising.;Je všeobecne známe, že úrokové sadzby rastú.;It is common knowledge that interest rates are rising.;In the financial sector, it is common knowledge that interest rates are rising.;Don't be surprised, it is common knowledge that interest rates are rising.
+665;I’m under no illusion that this will be easy.;Nerobím si ilúzie, že to bude ľahké.;I’m under no illusion that this will be easy.;We started the project, but I’m under no illusion that this will be easy.;Prepare yourself, I’m under no illusion that this will be easy.
+666;It comes as no surprise that the sales are up.;Neprekvapuje ma, že predaje stúpli.;It comes as no surprise that the sales are up.;After such a great campaign, it comes as no surprise that the sales are up.;"Look at the numbers; it comes as no surprise that the sales are up."
+667;I have a clear grasp of what needs to be done.;Mám jasnú predstavu o tom, čo treba urobiť.;I have a clear grasp of what needs to be done.;Give me a moment, I have a clear grasp of what needs to be done.;The team relies on me because I have a clear grasp of what needs to be done.
+668;A positive attitude makes all the difference.;Pozitívny prístup robí obrovský rozdiel.;A positive attitude makes all the difference.;In any difficult situation, a positive attitude makes all the difference.;I believe that a positive attitude makes all the difference.
+669;I’m keeping my options open regarding my career.;Nechávam si otvorené zadné vrátka ohľadom mojej kariéry.;I’m keeping my options open regarding my career.;I haven't accepted the offer because I’m keeping my options open regarding my career.;It's smart to be flexible and keep my options open regarding my career.
+670;That’s beside the point, we need to focus on costs.;To je mimo témy, musíme sa sústrediť na náklady.;That’s beside the point, we need to focus on costs.;Stop talking about the color, that’s beside the point, we need to focus on costs.;I understand your frustration, but that’s beside the point, we need to focus on costs.
+671;I take it for granted that you know the rules.;Beriem ako samozrejmosť, že poznáš pravidlá.;I take it for granted that you know the rules.;Since you have been here for years, I take it for granted that you know the rules.;Please don't ignore them, I take it for granted that you know the rules.
+672;It is beyond my comprehension why they left.;To presahuje moje chápanie, prečo odišli.;It is beyond my comprehension why they left.;They were doing well, so it is beyond my comprehension why they left.;It is beyond my comprehension why they left without saying goodbye.
+673;I’m in the process of updating the files.;Práve som v procese aktualizácie súborov.;I’m in the process of updating the files.;Please wait, I’m in the process of updating the files.;The system is slow because I’m in the process of updating the files.
+674;I’m not entirely convinced by his explanation.;Nie som celkom presvedčený o jeho vysvetlení.;I’m not entirely convinced by his explanation.;He tried hard, but I’m not entirely convinced by his explanation.;I still have questions because I’m not entirely convinced by his explanation.
+675;It seems rather unlikely that we will finish today.;Zdá sa to dosť nepravdepodobné, že skončíme dnes.;It seems rather unlikely that we will finish today.;Given the workload, it seems rather unlikely that we will finish today.;Let's be realistic, it seems rather unlikely that we will finish today.
+676;I’ve come to the conclusion that we need help.;Dospel som k záveru, že potrebujeme pomoc.;I’ve come to the conclusion that we need help.;After analyzing the data, I’ve come to the conclusion that we need help.;"I don't see any other way; I’ve come to the conclusion that we need help."
+677;It is worth pointing out that we are ahead of schedule.;Stojí za zmienku, že sme v predstihu.;It is worth pointing out that we are ahead of schedule.;Before we finish, it is worth pointing out that we are ahead of schedule.;It is worth pointing out that we are ahead of schedule despite the delays.
+678;I’m at a loss as to how to fix this error.;Som stratený v tom, ako opraviť túto chybu.;I’m at a loss as to how to fix this error.;Everything I tried failed, I’m at a loss as to how to fix this error.;Can you help me? I’m at a loss as to how to fix this error.
+679;It’s high time we addressed the issue of safety.;Je najvyšší čas, aby sme riešili otázku bezpečnosti.;It’s high time we addressed the issue of safety.;"There have been too many incidents; it’s high time we addressed the issue of safety.";Don't delay it further, it’s high time we addressed the issue of safety.
+680;I’m not in a position to judge their performance.;Nie som v pozícii, aby som súdil ich výkon.;I’m not in a position to judge their performance.;I am just a colleague, so I’m not in a position to judge their performance.;"Please ask the manager; I’m not in a position to judge their performance."
+681;It stands to reason that this is the best approach.;Je logické, že toto je najlepší prístup.;It stands to reason that this is the best approach.;We chose it because it stands to reason that this is the best approach.;Since it stands to reason that this is the best approach, let's proceed.
+682;As far as I’m concerned, the decision is final.;Pokiaľ ide o mňa, rozhodnutie je konečné.;As far as I’m concerned, the decision is final.;I don't need further discussion, as far as I’m concerned, the decision is final.;You can appeal, but as far as I’m concerned, the decision is final.
+683;There is no denying that she is highly skilled.;Nedá sa poprieť, že je vysoko kvalifikovaná.;There is no denying that she is highly skilled.;Everyone agrees there is no denying that she is highly skilled.;After seeing her work, there is no denying that she is highly skilled.
+684;It is common knowledge that interest rates are rising.;Je všeobecne známe, že úrokové sadzby rastú.;It is common knowledge that interest rates are rising.;In the financial sector, it is common knowledge that interest rates are rising.;Don't be surprised, it is common knowledge that interest rates are rising.
+685;I’m under no illusion that this will be easy.;Nerobím si ilúzie, že to bude ľahké.;I’m under no illusion that this will be easy.;We started the project, but I’m under no illusion that this will be easy.;Prepare yourself, I’m under no illusion that this will be easy.
+686;It comes as no surprise that the sales are up.;Neprekvapuje ma, že predaje stúpli.;It comes as no surprise that the sales are up.;After such a great campaign, it comes as no surprise that the sales are up.;"Look at the numbers; it comes as no surprise that the sales are up."
+687;I have a clear grasp of what needs to be done.;Mám jasnú predstavu o tom, čo treba urobiť.;I have a clear grasp of what needs to be done.;Give me a moment, I have a clear grasp of what needs to be done.;The team relies on me because I have a clear grasp of what needs to be done.
+688;A positive attitude makes all the difference.;Pozitívny prístup robí obrovský rozdiel.;A positive attitude makes all the difference.;In any difficult situation, a positive attitude makes all the difference.;I believe that a positive attitude makes all the difference.
+689;I’m keeping my options open regarding my career.;Nechávam si otvorené zadné vrátka ohľadom mojej kariéry.;I’m keeping my options open regarding my career.;I haven't accepted the offer because I’m keeping my options open regarding my career.;It's smart to be flexible and keep my options open regarding my career.
+690;That’s beside the point, we need to focus on costs.;To je mimo témy, musíme sa sústrediť na náklady.;That’s beside the point, we need to focus on costs.;Stop talking about the color, that’s beside the point, we need to focus on costs.;I understand your frustration, but that’s beside the point, we need to focus on costs.
+691;I take it for granted that you know the rules.;Beriem ako samozrejmosť, že poznáš pravidlá.;I take it for granted that you know the rules.;Since you have been here for years, I take it for granted that you know the rules.;Please don't ignore them, I take it for granted that you know the rules.
+692;It is beyond my comprehension why they left.;To presahuje moje chápanie, prečo odišli.;It is beyond my comprehension why they left.;They were doing well, so it is beyond my comprehension why they left.;It is beyond my comprehension why they left without saying goodbye.
+693;I’m in the process of updating the files.;Práve som v procese aktualizácie súborov.;I’m in the process of updating the files.;Please wait, I’m in the process of updating the files.;The system is slow because I’m in the process of updating the files.
+694;I’m not entirely convinced by his explanation.;Nie som celkom presvedčený o jeho vysvetlení.;I’m not entirely convinced by his explanation.;He tried hard, but I’m not entirely convinced by his explanation.;I still have questions because I’m not entirely convinced by his explanation.
+695;It seems rather unlikely that we will finish today.;Zdá sa to dosť nepravdepodobné, že skončíme dnes.;It seems rather unlikely that we will finish today.;Given the workload, it seems rather unlikely that we will finish today.;Let's be realistic, it seems rather unlikely that we will finish today.
+696;I’ve come to the conclusion that we need help.;Dospel som k záveru, že potrebujeme pomoc.;I’ve come to the conclusion that we need help.;After analyzing the data, I’ve come to the conclusion that we need help.;"I don't see any other way; I’ve come to the conclusion that we need help."
+697;It is worth pointing out that we are ahead of schedule.;Stojí za zmienku, že sme v predstihu.;It is worth pointing out that we are ahead of schedule.;Before we finish, it is worth pointing out that we are ahead of schedule.;It is worth pointing out that we are ahead of schedule despite the delays.
+698;I’m at a loss as to how to fix this error.;Som stratený v tom, ako opraviť túto chybu.;I’m at a loss as to how to fix this error.;Everything I tried failed, I’m at a loss as to how to fix this error.;Can you help me? I’m at a loss as to how to fix this error.
+699;It’s high time we addressed the issue of safety.;Je najvyšší čas, aby sme riešili otázku bezpečnosti.;It’s high time we addressed the issue of safety.;"There have been too many incidents; it’s high time we addressed the issue of safety.";Don't delay it further, it’s high time we addressed the issue of safety.
+700;I’m not in a position to judge their performance.;Nie som v pozícii, aby som súdil ich výkon.;I’m not in a position to judge their performance.;I am just a colleague, so I’m not in a position to judge their performance.;"Please ask the manager; I’m not in a position to judge their performance."
+701;It stands to reason that this is the best approach.;Je logické, že toto je najlepší prístup.;It stands to reason that this is the best approach.;We chose it because it stands to reason that this is the best approach.;Since it stands to reason that this is the best approach, let's proceed.
+702;As far as I’m concerned, the decision is final.;Pokiaľ ide o mňa, rozhodnutie je konečné.;As far as I’m concerned, the decision is final.;I don't need further discussion, as far as I’m concerned, the decision is final.;You can appeal, but as far as I’m concerned, the decision is final.
+703;There is no denying that she is highly skilled.;Nedá sa poprieť, že je vysoko kvalifikovaná.;There is no denying that she is highly skilled.;Everyone agrees there is no denying that she is highly skilled.;After seeing her work, there is no denying that she is highly skilled.
+704;It is common knowledge that interest rates are rising.;Je všeobecne známe, že úrokové sadzby rastú.;It is common knowledge that interest rates are rising.;In the financial sector, it is common knowledge that interest rates are rising.;Don't be surprised, it is common knowledge that interest rates are rising.
+705;I’m under no illusion that this will be easy.;Nerobím si ilúzie, že to bude ľahké.;I’m under no illusion that this will be easy.;We started the project, but I’m under no illusion that this will be easy.;Prepare yourself, I’m under no illusion that this will be easy.
+706;It comes as no surprise that the sales are up.;Neprekvapuje ma, že predaje stúpli.;It comes as no surprise that the sales are up.;After such a great campaign, it comes as no surprise that the sales are up.;"Look at the numbers; it comes as no surprise that the sales are up."
+707;I have a clear grasp of what needs to be done.;Mám jasnú predstavu o tom, čo treba urobiť.;I have a clear grasp of what needs to be done.;Give me a moment, I have a clear grasp of what needs to be done.;The team relies on me because I have a clear grasp of what needs to be done.
+708;A positive attitude makes all the difference.;Pozitívny prístup robí obrovský rozdiel.;A positive attitude makes all the difference.;In any difficult situation, a positive attitude makes all the difference.;I believe that a positive attitude makes all the difference.
+709;I’m keeping my options open regarding my career.;Nechávam si otvorené zadné vrátka ohľadom mojej kariéry.;I’m keeping my options open regarding my career.;I haven't accepted the offer because I’m keeping my options open regarding my career.;It's smart to be flexible and keep my options open regarding my career.
+710;That’s beside the point, we need to focus on costs.;To je mimo témy, musíme sa sústrediť na náklady.;That’s beside the point, we need to focus on costs.;Stop talking about the color, that’s beside the point, we need to focus on costs.;I understand your frustration, but that’s beside the point, we need to focus on costs.
+711;I take it for granted that you know the rules.;Beriem ako samozrejmosť, že poznáš pravidlá.;I take it for granted that you know the rules.;Since you have been here for years, I take it for granted that you know the rules.;Please don't ignore them, I take it for granted that you know the rules.
+712;It is beyond my comprehension why they left.;To presahuje moje chápanie, prečo odišli.;It is beyond my comprehension why they left.;They were doing well, so it is beyond my comprehension why they left.;It is beyond my comprehension why they left without saying goodbye.
+713;I’m in the process of updating the files.;Práve som v procese aktualizácie súborov.;I’m in the process of updating the files.;Please wait, I’m in the process of updating the files.;The system is slow because I’m in the process of updating the files.
+714;I’m not entirely convinced by his explanation.;Nie som celkom presvedčený o jeho vysvetlení.;I’m not entirely convinced by his explanation.;He tried hard, but I’m not entirely convinced by his explanation.;I still have questions because I’m not entirely convinced by his explanation.
+715;It seems rather unlikely that we will finish today.;Zdá sa to dosť nepravdepodobné, že skončíme dnes.;It seems rather unlikely that we will finish today.;Given the workload, it seems rather unlikely that we will finish today.;Let's be realistic, it seems rather unlikely that we will finish today.
+716;I’ve come to the conclusion that we need help.;Dospel som k záveru, že potrebujeme pomoc.;I’ve come to the conclusion that we need help.;After analyzing the data, I’ve come to the conclusion that we need help.;"I don't see any other way; I’ve come to the conclusion that we need help."
+717;It is worth pointing out that we are ahead of schedule.;Stojí za zmienku, že sme v predstihu.;It is worth pointing out that we are ahead of schedule.;Before we finish, it is worth pointing out that we are ahead of schedule.;It is worth pointing out that we are ahead of schedule despite the delays.
+718;I’m at a loss as to how to fix this error.;Som stratený v tom, ako opraviť túto chybu.;I’m at a loss as to how to fix this error.;Everything I tried failed, I’m at a loss as to how to fix this error.;Can you help me? I’m at a loss as to how to fix this error.
+719;It’s high time we addressed the issue of safety.;Je najvyšší čas, aby sme riešili otázku bezpečnosti.;It’s high time we addressed the issue of safety.;"There have been too many incidents; it’s high time we addressed the issue of safety.";Don't delay it further, it’s high time we addressed the issue of safety.
+720;I’m not in a position to judge their performance.;Nie som v pozícii, aby som súdil ich výkon.;I’m not in a position to judge their performance.;I am just a colleague, so I’m not in a position to judge their performance.;"Please ask the manager; I’m not in a position to judge their performance."
+721;It stands to reason that this is the best approach.;Je logické, že toto je najlepší prístup.;It stands to reason that this is the best approach.;We chose it because it stands to reason that this is the best approach.;Since it stands to reason that this is the best approach, let's proceed.
+722;As far as I’m concerned, the decision is final.;Pokiaľ ide o mňa, rozhodnutie je konečné.;As far as I’m concerned, the decision is final.;I don't need further discussion, as far as I’m concerned, the decision is final.;You can appeal, but as far as I’m concerned, the decision is final.
+723;There is no denying that she is highly skilled.;Nedá sa poprieť, že je vysoko kvalifikovaná.;There is no denying that she is highly skilled.;Everyone agrees there is no denying that she is highly skilled.;After seeing her work, there is no denying that she is highly skilled.
+724;It is common knowledge that interest rates are rising.;Je všeobecne známe, že úrokové sadzby rastú.;It is common knowledge that interest rates are rising.;In the financial sector, it is common knowledge that interest rates are rising.;Don't be surprised, it is common knowledge that interest rates are rising.
+725;I’m under no illusion that this will be easy.;Nerobím si ilúzie, že to bude ľahké.;I’m under no illusion that this will be easy.;We started the project, but I’m under no illusion that this will be easy.;Prepare yourself, I’m under no illusion that this will be easy.
+726;It comes as no surprise that the sales are up.;Neprekvapuje ma, že predaje stúpli.;It comes as no surprise that the sales are up.;After such a great campaign, it comes as no surprise that the sales are up.;"Look at the numbers; it comes as no surprise that the sales are up."
+727;I have a clear grasp of what needs to be done.;Mám jasnú predstavu o tom, čo treba urobiť.;I have a clear grasp of what needs to be done.;Give me a moment, I have a clear grasp of what needs to be done.;The team relies on me because I have a clear grasp of what needs to be done.
+728;A positive attitude makes all the difference.;Pozitívny prístup robí obrovský rozdiel.;A positive attitude makes all the difference.;In any difficult situation, a positive attitude makes all the difference.;I believe that a positive attitude makes all the difference.
+729;I’m keeping my options open regarding my career.;Nechávam si otvorené zadné vrátka ohľadom mojej kariéry.;I’m keeping my options open regarding my career.;I haven't accepted the offer because I’m keeping my options open regarding my career.;It's smart to be flexible and keep my options open regarding my career.
+730;That’s beside the point, we need to focus on costs.;To je mimo témy, musíme sa sústrediť na náklady.;That’s beside the point, we need to focus on costs.;Stop talking about the color, that’s beside the point, we need to focus on costs.;I understand your frustration, but that’s beside the point, we need to focus on costs.
+731;I take it for granted that you know the rules.;Beriem ako samozrejmosť, že poznáš pravidlá.;I take it for granted that you know the rules.;Since you have been here for years, I take it for granted that you know the rules.;Please don't ignore them, I take it for granted that you know the rules.
+732;It is beyond my comprehension why they left.;To presahuje moje chápanie, prečo odišli.;It is beyond my comprehension why they left.;They were doing well, so it is beyond my comprehension why they left.;It is beyond my comprehension why they left without saying goodbye.
+733;I’m in the process of updating the files.;Práve som v procese aktualizácie súborov.;I’m in the process of updating the files.;Please wait, I’m in the process of updating the files.;The system is slow because I’m in the process of updating the files.
+734;I’m not entirely convinced by his explanation.;Nie som celkom presvedčený o jeho vysvetlení.;I’m not entirely convinced by his explanation.;He tried hard, but I’m not entirely convinced by his explanation.;I still have questions because I’m not entirely convinced by his explanation.
+735;It seems rather unlikely that we will finish today.;Zdá sa to dosť nepravdepodobné, že skončíme dnes.;It seems rather unlikely that we will finish today.;Given the workload, it seems rather unlikely that we will finish today.;Let's be realistic, it seems rather unlikely that we will finish today.
+736;I’ve come to the conclusion that we need help.;Dospel som k záveru, že potrebujeme pomoc.;I’ve come to the conclusion that we need help.;After analyzing the data, I’ve come to the conclusion that we need help.;"I don't see any other way; I’ve come to the conclusion that we need help."
+737;It is worth pointing out that we are ahead of schedule.;Stojí za zmienku, že sme v predstihu.;It is worth pointing out that we are ahead of schedule.;Before we finish, it is worth pointing out that we are ahead of schedule.;It is worth pointing out that we are ahead of schedule despite the delays.
+738;I’m at a loss as to how to fix this error.;Som stratený v tom, ako opraviť túto chybu.;I’m at a loss as to how to fix this error.;Everything I tried failed, I’m at a loss as to how to fix this error.;Can you help me? I’m at a loss as to how to fix this error.
+739;It’s high time we addressed the issue of safety.;Je najvyšší čas, aby sme riešili otázku bezpečnosti.;It’s high time we addressed the issue of safety.;"There have been too many incidents; it’s high time we addressed the issue of safety.";Don't delay it further, it’s high time we addressed the issue of safety.
+740;I’m not in a position to judge their performance.;Nie som v pozícii, aby som súdil ich výkon.;I’m not in a position to judge their performance.;I am just a colleague, so I’m not in a position to judge their performance.;"Please ask the manager; I’m not in a position to judge their performance."
+741;It stands to reason that this is the best approach.;Je logické, že toto je najlepší prístup.;It stands to reason that this is the best approach.;We chose it because it stands to reason that this is the best approach.;Since it stands to reason that this is the best approach, let's proceed.
+742;As far as I’m concerned, the decision is final.;Pokiaľ ide o mňa, rozhodnutie je konečné.;As far as I’m concerned, the decision is final.;I don't need further discussion, as far as I’m concerned, the decision is final.;You can appeal, but as far as I’m concerned, the decision is final.
+743;There is no denying that she is highly skilled.;Nedá sa poprieť, že je vysoko kvalifikovaná.;There is no denying that she is highly skilled.;Everyone agrees there is no denying that she is highly skilled.;After seeing her work, there is no denying that she is highly skilled.
+744;It is common knowledge that interest rates are rising.;Je všeobecne známe, že úrokové sadzby rastú.;It is common knowledge that interest rates are rising.;In the financial sector, it is common knowledge that interest rates are rising.;Don't be surprised, it is common knowledge that interest rates are rising.
+745;I’m under no illusion that this will be easy.;Nerobím si ilúzie, že to bude ľahké.;I’m under no illusion that this will be easy.;We started the project, but I’m under no illusion that this will be easy.;Prepare yourself, I’m under no illusion that this will be easy.
+746;It comes as no surprise that the sales are up.;Neprekvapuje ma, že predaje stúpli.;It comes as no surprise that the sales are up.;After such a great campaign, it comes as no surprise that the sales are up.;"Look at the numbers; it comes as no surprise that the sales are up."
+747;I have a clear grasp of what needs to be done.;Mám jasnú predstavu o tom, čo treba urobiť.;I have a clear grasp of what needs to be done.;Give me a moment, I have a clear grasp of what needs to be done.;The team relies on me because I have a clear grasp of what needs to be done.
+748;A positive attitude makes all the difference.;Pozitívny prístup robí obrovský rozdiel.;A positive attitude makes all the difference.;In any difficult situation, a positive attitude makes all the difference.;I believe that a positive attitude makes all the difference.
+749;I’m keeping my options open regarding my career.;Nechávam si otvorené zadné vrátka ohľadom mojej kariéry.;I’m keeping my options open regarding my career.;I haven't accepted the offer because I’m keeping my options open regarding my career.;It's smart to be flexible and keep my options open regarding my career.
+750;That’s beside the point, we need to focus on costs.;To je mimo témy, musíme sa sústrediť na náklady.;That’s beside the point, we need to focus on costs.;Stop talking about the color, that’s beside the point, we need to focus on costs.;I understand your frustration, but that’s beside the point, we need to focus on costs.
+751;I take it for granted that you know the rules.;Beriem ako samozrejmosť, že poznáš pravidlá.;I take it for granted that you know the rules.;Since you have been here for years, I take it for granted that you know the rules.;Please don't ignore them, I take it for granted that you know the rules.
+752;It is beyond my comprehension why they left.;To presahuje moje chápanie, prečo odišli.;It is beyond my comprehension why they left.;They were doing well, so it is beyond my comprehension why they left.;It is beyond my comprehension why they left without saying goodbye.
+753;I’m in the process of updating the files.;Práve som v procese aktualizácie súborov.;I’m in the process of updating the files.;Please wait, I’m in the process of updating the files.;The system is slow because I’m in the process of updating the files.
+754;I’m not entirely convinced by his explanation.;Nie som celkom presvedčený o jeho vysvetlení.;I’m not entirely convinced by his explanation.;He tried hard, but I’m not entirely convinced by his explanation.;I still have questions because I’m not entirely convinced by his explanation.
+755;It seems rather unlikely that we will finish today.;Zdá sa to dosť nepravdepodobné, že skončíme dnes.;It seems rather unlikely that we will finish today.;Given the workload, it seems rather unlikely that we will finish today.;Let's be realistic, it seems rather unlikely that we will finish today.
+756;I’ve come to the conclusion that we need help.;Dospel som k záveru, že potrebujeme pomoc.;I’ve come to the conclusion that we need help.;After analyzing the data, I’ve come to the conclusion that we need help.;"I don't see any other way; I’ve come to the conclusion that we need help."
+757;It is worth pointing out that we are ahead of schedule.;Stojí za zmienku, že sme v predstihu.;It is worth pointing out that we are ahead of schedule.;Before we finish, it is worth pointing out that we are ahead of schedule.;It is worth pointing out that we are ahead of schedule despite the delays.
+758;I’m at a loss as to how to fix this error.;Som stratený v tom, ako opraviť túto chybu.;I’m at a loss as to how to fix this error.;Everything I tried failed, I’m at a loss as to how to fix this error.;Can you help me? I’m at a loss as to how to fix this error.
+759;It’s high time we addressed the issue of safety.;Je najvyšší čas, aby sme riešili otázku bezpečnosti.;It’s high time we addressed the issue of safety.;"There have been too many incidents; it’s high time we addressed the issue of safety.";Don't delay it further, it’s high time we addressed the issue of safety.
+760;I’m not in a position to judge their performance.;Nie som v pozícii, aby som súdil ich výkon.;I’m not in a position to judge their performance.;I am just a colleague, so I’m not in a position to judge their performance.;"Please ask the manager; I’m not in a position to judge their performance."
+761;It stands to reason that this is the best approach.;Je logické, že toto je najlepší prístup.;It stands to reason that this is the best approach.;We chose it because it stands to reason that this is the best approach.;Since it stands to reason that this is the best approach, let's proceed.
+762;As far as I’m concerned, the decision is final.;Pokiaľ ide o mňa, rozhodnutie je konečné.;As far as I’m concerned, the decision is final.;I don't need further discussion, as far as I’m concerned, the decision is final.;You can appeal, but as far as I’m concerned, the decision is final.
+763;There is no denying that she is highly skilled.;Nedá sa poprieť, že je vysoko kvalifikovaná.;There is no denying that she is highly skilled.;Everyone agrees there is no denying that she is highly skilled.;After seeing her work, there is no denying that she is highly skilled.
+764;It is common knowledge that interest rates are rising.;Je všeobecne známe, že úrokové sadzby rastú.;It is common knowledge that interest rates are rising.;In the financial sector, it is common knowledge that interest rates are rising.;Don't be surprised, it is common knowledge that interest rates are rising.
+765;I’m under no illusion that this will be easy.;Nerobím si ilúzie, že to bude ľahké.;I’m under no illusion that this will be easy.;We started the project, but I’m under no illusion that this will be easy.;Prepare yourself, I’m under no illusion that this will be easy.
+766;It comes as no surprise that the sales are up.;Neprekvapuje ma, že predaje stúpli.;It comes as no surprise that the sales are up.;After such a great campaign, it comes as no surprise that the sales are up.;"Look at the numbers; it comes as no surprise that the sales are up."
+767;I have a clear grasp of what needs to be done.;Mám jasnú predstavu o tom, čo treba urobiť.;I have a clear grasp of what needs to be done.;Give me a moment, I have a clear grasp of what needs to be done.;The team relies on me because I have a clear grasp of what needs to be done.
+768;A positive attitude makes all the difference.;Pozitívny prístup robí obrovský rozdiel.;A positive attitude makes all the difference.;In any difficult situation, a positive attitude makes all the difference.;I believe that a positive attitude makes all the difference.
+769;I’m keeping my options open regarding my career.;Nechávam si otvorené zadné vrátka ohľadom mojej kariéry.;I’m keeping my options open regarding my career.;I haven't accepted the offer because I’m keeping my options open regarding my career.;It's smart to be flexible and keep my options open regarding my career.
+770;That’s beside the point, we need to focus on costs.;To je mimo témy, musíme sa sústrediť na náklady.;That’s beside the point, we need to focus on costs.;Stop talking about the color, that’s beside the point, we need to focus on costs.;I understand your frustration, but that’s beside the point, we need to focus on costs.
+771;I take it for granted that you know the rules.;Beriem ako samozrejmosť, že poznáš pravidlá.;I take it for granted that you know the rules.;Since you have been here for years, I take it for granted that you know the rules.;Please don't ignore them, I take it for granted that you know the rules.
+772;It is beyond my comprehension why they left.;To presahuje moje chápanie, prečo odišli.;It is beyond my comprehension why they left.;They were doing well, so it is beyond my comprehension why they left.;It is beyond my comprehension why they left without saying goodbye.
+773;I’m in the process of updating the files.;Práve som v procese aktualizácie súborov.;I’m in the process of updating the files.;Please wait, I’m in the process of updating the files.;The system is slow because I’m in the process of updating the files.
+774;I’m not entirely convinced by his explanation.;Nie som celkom presvedčený o jeho vysvetlení.;I’m not entirely convinced by his explanation.;He tried hard, but I’m not entirely convinced by his explanation.;I still have questions because I’m not entirely convinced by his explanation.
+775;It seems rather unlikely that we will finish today.;Zdá sa to dosť nepravdepodobné, že skončíme dnes.;It seems rather unlikely that we will finish today.;Given the workload, it seems rather unlikely that we will finish today.;Let's be realistic, it seems rather unlikely that we will finish today.
+776;I’ve come to the conclusion that we need help.;Dospel som k záveru, že potrebujeme pomoc.;I’ve come to the conclusion that we need help.;After analyzing the data, I’ve come to the conclusion that we need help.;"I don't see any other way; I’ve come to the conclusion that we need help."
+777;It is worth pointing out that we are ahead of schedule.;Stojí za zmienku, že sme v predstihu.;It is worth pointing out that we are ahead of schedule.;Before we finish, it is worth pointing out that we are ahead of schedule.;It is worth pointing out that we are ahead of schedule despite the delays.
+778;I’m at a loss as to how to fix this error.;Som stratený v tom, ako opraviť túto chybu.;I’m at a loss as to how to fix this error.;Everything I tried failed, I’m at a loss as to how to fix this error.;Can you help me? I’m at a loss as to how to fix this error.
+779;It’s high time we addressed the issue of safety.;Je najvyšší čas, aby sme riešili otázku bezpečnosti.;It’s high time we addressed the issue of safety.;"There have been too many incidents; it’s high time we addressed the issue of safety.";Don't delay it further, it’s high time we addressed the issue of safety.
+780;I’m not in a position to judge their performance.;Nie som v pozícii, aby som súdil ich výkon.;I’m not in a position to judge their performance.;I am just a colleague, so I’m not in a position to judge their performance.;"Please ask the manager; I’m not in a position to judge their performance."
+781;;;;;
+782;;;;;
+783;;;;;
+784;;;;;
+785;;;;;
+786;;;;;
+787;;;;;
+788;;;;;
+789;;;;;
+790;;;;;
+791;;;;;
+792;;;;;
+793;;;;;
+794;;;;;
+795;;;;;
+796;;;;;
+797;;;;;
+798;;;;;
+799;;;;;
+800;;;;;
+801;;;;;
+802;;;;;
+803;;;;;
+804;;;;;
+805;;;;;
+806;;;;;
+807;;;;;
+808;;;;;
+809;;;;;
+810;;;;;
+811;;;;;
+812;;;;;
+813;;;;;
+814;;;;;
+815;;;;;
+816;;;;;
+817;;;;;
+818;;;;;
+819;;;;;
+820;;;;;
+821;;;;;
+822;;;;;
+823;;;;;
+824;;;;;
+825;;;;;
+826;;;;;
+827;;;;;
+828;;;;;
+829;;;;;
+830;;;;;
+831;;;;;
+832;;;;;
+833;;;;;
+834;;;;;
+835;;;;;
+836;;;;;
+837;;;;;
+838;;;;;
+839;;;;;
+840;;;;;
+841;;;;;
+842;;;;;
+843;;;;;
+844;;;;;
+845;;;;;
+846;;;;;
+847;;;;;
+848;;;;;
+849;;;;;
+850;;;;;
+851;;;;;
+852;;;;;
+853;;;;;
+854;;;;;
+855;;;;;
+856;;;;;
+857;;;;;
+858;;;;;
+859;;;;;
+860;;;;;
+861;;;;;
+862;;;;;
+863;;;;;
+864;;;;;
+865;;;;;
+866;;;;;
+867;;;;;
+868;;;;;
+869;;;;;
+870;;;;;
+871;;;;;
+872;;;;;
+873;;;;;
+874;;;;;
+875;;;;;
+876;;;;;
+877;;;;;
+878;;;;;
+879;;;;;
+880;;;;;
+881;;;;;
+882;;;;;
+883;;;;;
+884;;;;;
+885;;;;;
+886;;;;;
+887;;;;;
+888;;;;;
+889;;;;;
+890;;;;;
+891;;;;;
+892;;;;;
+893;;;;;
+894;;;;;
+895;;;;;
+896;;;;;
+897;;;;;
+898;;;;;
+899;;;;;
+900;;;;;
+901;;;;;
+902;;;;;
+903;;;;;
+904;;;;;
+905;;;;;
+906;;;;;
+907;;;;;
+908;;;;;
+909;;;;;
+910;;;;;
+911;;;;;
+912;;;;;
+913;;;;;
+914;;;;;
+915;;;;;
+916;;;;;
+917;;;;;
+918;;;;;
+919;;;;;
+920;;;;;
+921;;;;;
+922;;;;;
+923;;;;;
+924;;;;;
+925;;;;;
+926;;;;;
+927;;;;;
+928;;;;;
+929;;;;;
+930;;;;;
+931;;;;;
+932;;;;;
+933;;;;;
+934;;;;;
+935;;;;;
+936;;;;;
+937;;;;;
+938;;;;;
+939;;;;;
+940;;;;;
+941;;;;;
+942;;;;;
+943;;;;;
+944;;;;;
+945;;;;;
+946;;;;;
+947;;;;;
+948;;;;;
+949;;;;;
+950;;;;;
+951;;;;;
+952;;;;;
+953;;;;;
+954;;;;;
+955;;;;;
+956;;;;;
+957;;;;;
+958;;;;;
+959;;;;;
+960;;;;;
+961;;;;;
+962;;;;;
+963;;;;;
+964;;;;;
+965;;;;;
+966;;;;;
+967;;;;;
+968;;;;;
+969;;;;;
+970;;;;;
+971;;;;;
+972;;;;;
+973;;;;;
+974;;;;;
+975;;;;;
+976;;;;;
+977;;;;;
+978;;;;;
+979;;;;;
+980;;;;;
+981;;;;;
+982;;;;;
+983;;;;;
+984;;;;;
+985;;;;;
+986;;;;;
+987;;;;;
+988;;;;;
+989;;;;;
+990;;;;;
+991;;;;;
+992;;;;;
+993;;;;;
+994;;;;;
+995;;;;;
+996;;;;;
+997;;;;;
+998;;;;;
+999;;;;;
+1000;;;;;
+1001;;;;;
+1002;;;;;
+1003;;;;;
+1004;;;;;
+1005;;;;;
+1006;;;;;
+1007;;;;;
+1008;;;;;
+1009;;;;;
+1010;;;;;
+1011;;;;;
+1012;;;;;
+1013;;;;;
+1014;;;;;
+1015;;;;;
+1016;;;;;
+1017;;;;;
+1018;;;;;
+1019;;;;;
+1020;;;;;
+1021;;;;;
+1022;;;;;
+1023;;;;;
+1024;;;;;
+1025;;;;;
+1026;;;;;
+1027;;;;;
+1028;;;;;
+1029;;;;;
+1030;;;;;
+1031;;;;;
+1032;;;;;
+1033;;;;;
+1034;;;;;
+1035;;;;;
+1036;;;;;
+1037;;;;;
+1038;;;;;
+1039;;;;;
+1040;;;;;
+1041;;;;;
+1042;;;;;
+1043;;;;;
+1044;;;;;
+1045;;;;;
+1046;;;;;
+1047;;;;;
+1048;;;;;
+1049;;;;;
+1050;;;;;
+1051;;;;;
+1052;;;;;
+1053;;;;;
+1054;;;;;
+1055;;;;;
+1056;;;;;
+1057;;;;;
+1058;;;;;
+1059;;;;;
+1060;;;;;
+1061;;;;;
+1062;;;;;
+1063;;;;;
+1064;;;;;
+1065;;;;;
+1066;;;;;
+1067;;;;;
+1068;;;;;
+1069;;;;;
+1070;;;;;
+1071;;;;;
+1072;;;;;
+1073;;;;;
+1074;;;;;
+1075;;;;;
+1076;;;;;
+1077;;;;;
+1078;;;;;
+1079;;;;;
+1080;;;;;
+1081;;;;;
+1082;;;;;
+1083;;;;;
+1084;;;;;
+1085;;;;;
+1086;;;;;
+1087;;;;;
+1088;;;;;
+1089;;;;;
+1090;;;;;
+1091;;;;;
+1092;;;;;
+1093;;;;;
+1094;;;;;
+1095;;;;;
+1096;;;;;
+1097;;;;;
+1098;;;;;
+1099;;;;;
+1100;;;;;
+1101;;;;;
+1102;;;;;
+1103;;;;;
+1104;;;;;
+1105;;;;;
+1106;;;;;
+1107;;;;;
+1108;;;;;
+1109;;;;;
+1110;;;;;
+1111;;;;;
+1112;;;;;
+1113;;;;;
+1114;;;;;
+1115;;;;;
+1116;;;;;
+1117;;;;;
+1118;;;;;
+1119;;;;;
+1120;;;;;
+1121;;;;;
+1122;;;;;
+1123;;;;;
+1124;;;;;
+1125;;;;;
+1126;;;;;
+1127;;;;;
+1128;;;;;
+1129;;;;;
+1130;;;;;
+1131;;;;;
+1132;;;;;
+1133;;;;;
+1134;;;;;
+1135;;;;;
+1136;;;;;
+1137;;;;;
+1138;;;;;
+1139;;;;;
+1140;;;;;
+1141;;;;;
+1142;;;;;
+1143;;;;;
+1144;;;;;
+1145;;;;;
+1146;;;;;
+1147;;;;;
+1148;;;;;
+1149;;;;;
+1150;;;;;
+1151;;;;;
+1152;;;;;
+1153;;;;;
+1154;;;;;
+1155;;;;;
+1156;;;;;
+1157;;;;;
+1158;;;;;
+1159;;;;;
+1160;;;;;
+1161;;;;;
+1162;;;;;
+1163;;;;;
+1164;;;;;
+1165;;;;;
+1166;;;;;
+1167;;;;;
+1168;;;;;
+1169;;;;;
+1170;;;;;
+1171;;;;;
+1172;;;;;
+1173;;;;;
+1174;;;;;
+1175;;;;;
+1176;;;;;
+1177;;;;;
+1178;;;;;
+1179;;;;;
+1180;;;;;
+1181;;;;;
+1182;;;;;
+1183;;;;;
+1184;;;;;
+1185;;;;;
+1186;;;;;
+1187;;;;;
+1188;;;;;
+1189;;;;;
+1190;;;;;
+1191;;;;;
+1192;;;;;
+1193;;;;;
+1194;;;;;
+1195;;;;;
+1196;;;;;
+1197;;;;;
+1198;;;;;
+1199;;;;;
+1200;;;;;
+1201;;;;;
+1202;;;;;
+1203;;;;;
+1204;;;;;
+1205;;;;;
+1206;;;;;
+1207;;;;;
+1208;;;;;
+1209;;;;;
+1210;;;;;
+1211;;;;;
+1212;;;;;
+1213;;;;;
+1214;;;;;
+1215;;;;;
+1216;;;;;
+1217;;;;;
+1218;;;;;
+1219;;;;;
+1220;;;;;
+1221;;;;;
+1222;;;;;
+1223;;;;;
+1224;;;;;
+1225;;;;;
+1226;;;;;
+1227;;;;;
+1228;;;;;
+1229;;;;;
+1230;;;;;
+1231;;;;;
+1232;;;;;
+1233;;;;;
+1234;;;;;
+1235;;;;;
+1236;;;;;
+1237;;;;;
+1238;;;;;
+1239;;;;;
+1240;;;;;
+1241;;;;;
